@@ -10,7 +10,6 @@ npm init astro -- --template portfolio
 
 ![portfolio](https://user-images.githubusercontent.com/4677417/186189473-03dda103-65d3-4220-8b60-180ccaee5939.png)
 
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
