@@ -1,25 +1,99 @@
 ---
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 ---
 
 <footer>
-	&copy; {currentYear} Jeanine White
-	<small class="byline">🚀 Built by Astro</small>
-</footer>
-<style>
-	footer {
-		text-align: center;
-		padding-top: 8rem;
-		padding-right: 2rem;
-		padding-bottom: 4rem;
-		padding-left: 2rem;
-	}
+  <div class="logo">
+    <img src="../../public/assets/svg/logo.svg" alt="Logo" />
+  </div>
 
-	.byline {
-		display: block;
-		margin-top: 1rem;
-		color: var(--t-subdue);
-		font-size: var(--f-d2);
-		text-transform: uppercase;
-	}
+  <p class="description">Experienced and enthusiast Vue.js Frontend Developer</p>
+
+  <div class="navLinks">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Services</a>
+    <a href="">Projects</a>
+    <a href="">Testimonials</a>
+    <a href="">Contact Me</a>
+  </div>
+
+  <div class="socialMedia">
+    <img src="../../public/assets/svg/facebook.svg" alt="" />
+    <img src="../../public/assets/svg/instagram.svg" alt="" />
+    <img src="../../public/assets/svg//twitter.svg" alt="" />
+    <img src="../../public/assets/svg//linkedin.svg" alt="" />
+    <img src="../../public/assets/svg/github.svg" alt="" />
+    <img src="../../public/assets/svg//stackoverflow.svg" alt="" />
+  </div>
+
+  <div class="byline"></div>
+
+  <div class="copyright">© Copyright Roland Doda. All Right Reserved.</div>
+</footer>
+
+<style>
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #03233d;
+  }
+
+  .logo {
+    width: 220px;
+    height: 67px;
+    margin: auto;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .navLinks a {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+
+  .socialMedia {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .socialMedia img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .byline {
+    width: 1240px;
+    height: 1px;
+    margin: 30px auto;
+    background: #ccc;
+  }
+
+  .copyright {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
 </style>

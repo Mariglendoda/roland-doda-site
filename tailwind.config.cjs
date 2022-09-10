@@ -46,15 +46,34 @@ module.exports = {
         ".h1": {
           fontFamily: theme("fontFamily.poppins"),
           fontSize: theme("fontSize.48"),
-          fontWeight: "bold",
+          fontWeight: theme("fontWeight.bold"),
           textTransform: "capitalize",
         },
 
         ".h2": {
           fontFamily: theme("fontFamily.poppins"),
-          fontSize: theme("fontSize.48"),
-          fontWeight: "bold",
+          fontSize: theme("fontSize.24"),
+          fontWeight: theme("fontWeight.bold"),
           textTransform: "capitalize",
+        },
+
+        ".h3": {
+          fontFamily: theme("fontFamily.poppins"),
+          fontSize: theme("fontSize.18"),
+          fontWeight: theme("fontWeight.bold"),
+          textTransform: "capitalize",
+        },
+
+        ".p": {
+          fontFamily: theme("fontFamily.poppins"),
+          fontSize: theme("fontSize.16"),
+          fontWeight: theme("fontWeight.regular"),
+        },
+
+        ".p-small": {
+          fontFamily: theme("fontFamily.poppins"),
+          fontSize: theme("fontSize.14"),
+          fontWeight: theme("fontWeight.regular"),
         },
       })
     },
