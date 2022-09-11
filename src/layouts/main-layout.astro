@@ -1,6 +1,4 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
 ---
 
 <html lang="en">
@@ -10,13 +8,9 @@ import Footer from "../components/Footer.astro"
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Roland Doda</title>
-
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/global.css" />
-
     <style>
       html {
         height: 100%;
@@ -29,10 +23,6 @@ import Footer from "../components/Footer.astro"
   </head>
 
   <body class="bg-primary text-white px-[100px] font-poppins">
-    <Header />
-
     <slot />
-
-    <Footer />
   </body>
 </html>
