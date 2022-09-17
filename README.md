@@ -1,4 +1,4 @@
-> 👤 **Home Page** Delete this file. Have fun!
+## 👤 Home Page
 
 ![portfolio](./public/assets/Screenshot%202022-09-17%20125334.png)
 
