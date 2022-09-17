@@ -2,21 +2,23 @@
 ---
 
 <div class="grid items-center overflow-hidden">
-  <div class="planets-container">
-    <div class="route">
-      <div class="planet-container" id="vue-planet">
-        <div class="planet">
-          <svg width="48" height="48" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M42.089 6.66833H51.749L27.5991 47.6979L3.44922 6.66833H21.9239L27.5991 16.1824L33.1536 6.66833H42.089Z"
-              fill="#41B883"></path>
-            <path
-              d="M3.44922 6.66833L27.5991 47.6979L51.749 6.66833H42.089L27.5991 31.2861L12.9884 6.66833H3.44922Z"
-              fill="#41B883"></path>
-            <path
-              d="M12.9883 6.66833L27.599 31.405L42.0889 6.66833H33.1534L27.599 16.1824L21.9237 6.66833H12.9883Z"
-              fill="#35495E"></path>
-          </svg>
+  <div class="planets-container relative">
+    <div class="planet-index" id="vue-planet-index">
+      <div class="route">
+        <div class="planet-container" id="vue-planet">
+          <div class="planet">
+            <svg width="48" height="48" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M42.089 6.66833H51.749L27.5991 47.6979L3.44922 6.66833H21.9239L27.5991 16.1824L33.1536 6.66833H42.089Z"
+                fill="#41B883"></path>
+              <path
+                d="M3.44922 6.66833L27.5991 47.6979L51.749 6.66833H42.089L27.5991 31.2861L12.9884 6.66833H3.44922Z"
+                fill="#41B883"></path>
+              <path
+                d="M12.9883 6.66833L27.599 31.405L42.0889 6.66833H33.1534L27.599 16.1824L21.9237 6.66833H12.9883Z"
+                fill="#35495E"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -123,6 +125,7 @@
 
 <style>
   .planets-container {
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -133,6 +136,7 @@
     transform: rotateZ(-5deg) scaleX(5);
     /* background: yellow; */
     border: 1px solid white;
+    z-index: 998;
   }
 
   .planet {
@@ -184,6 +188,16 @@
     left: -25px;
   }
 
+  .planet-index {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  #vue-planet-index {
+    animation: hideFirstPlanet 12s infinite linear;
+  }
+
   @keyframes rotate {
     0% {
       transform: rotateZ(0deg);
@@ -198,6 +212,18 @@
     }
     100% {
       transform: rotateZ(0deg);
+    }
+  }
+
+  @keyframes hideFirstPlanet {
+    0% {
+      z-index: -999;
+    }
+    25% {
+      z-index: 999;
+    }
+    100% {
+      z-index: -999;
     }
   }
 </style>
