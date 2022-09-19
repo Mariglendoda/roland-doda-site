@@ -3,16 +3,8 @@ import LeftSection from "./LeftSection.astro"
 import RightSection from "./RightSection.astro"
 ---
 
-<div class="content">
-  <!-- <LeftSection /> -->
+<div class="grid grid-cols-[auto_1fr] align-center overflow-hidden">
+  <LeftSection />
 
   <RightSection />
 </div>
-
-<style>
-  .content {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-content: center;
-  }
-</style>
