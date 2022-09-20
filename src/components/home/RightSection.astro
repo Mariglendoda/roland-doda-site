@@ -79,20 +79,35 @@
       </div>
     </div>
   </div>
+
+  <div class="planet-index" id="tailwind-planet-index">
+    <div class="route">
+      <div class="planet-container" id="tailwind-planet-container">
+        <div class="planet" id="tailwind">
+          <svg width="48" height="48" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5242 23.6635C17.1342 17.2151 21.1591 13.9908 27.5991 13.9908C37.2591 13.9908 38.4665 21.2453 43.2965 22.4544C46.5165 23.2605 49.334 22.0514 51.749 18.8272C50.139 25.2756 46.114 28.4999 39.674 28.4999C30.0141 28.4999 28.8066 21.2453 23.9766 20.0363C20.7566 19.2302 17.9391 20.4393 15.5242 23.6635ZM3.44922 38.1725C5.05921 31.7241 9.08419 28.4999 15.5242 28.4999C25.1841 28.4999 26.3916 35.7544 31.2216 36.9634C34.4416 37.7695 37.2591 36.5604 39.674 33.3362C38.064 39.7846 34.0391 43.0089 27.5991 43.0089C17.9391 43.0089 16.7317 35.7544 11.9017 34.5453C8.68169 33.7392 5.86421 34.9483 3.44922 38.1725Z"
+              fill="#44A8B3"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
   .planets-container {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin: auto;
     border-radius: 50%;
+    border: 1px solid white;
     transform: scaleX(5);
   }
 
   .sun {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin: auto;
     border-radius: 50%;
     transform: scaleX(0.2);
@@ -125,13 +140,23 @@
     position: absolute;
   }
 
+  #vue-planet-container {
+    top: -15px;
+  }
+
   #vite-planet-container {
     left: 85px;
+    top: 0px;
   }
 
   #svelte-planet-container {
-    left: 42.5px;
-    top: 100px;
+    left: -10px;
+    top: 75px;
+  }
+
+  #tailwind-planet-container {
+    left: 70px;
+    top: 75px;
   }
 
   .planet-index {
@@ -149,6 +174,10 @@
   }
   #svelte-planet-index {
     animation: hideSveltePlanet 12s infinite;
+  }
+
+  #tailwind-planet-index {
+    animation: hideTailwindPlanet 12s infinite;
   }
 
   @keyframes rotate {
@@ -171,9 +200,6 @@
 
   @keyframes hideVuePlanet {
     0% {
-      z-index: 999;
-    }
-    25% {
       z-index: -999;
     }
     100% {
@@ -204,6 +230,18 @@
     }
     100% {
       z-index: 999;
+    }
+  }
+
+  @keyframes hideTailwindPlanet {
+    0% {
+      z-index: -999;
+    }
+    25% {
+      z-index: 999;
+    }
+    100% {
+      z-index: -999;
     }
   }
 </style>
