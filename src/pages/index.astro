@@ -2,14 +2,19 @@
 // Component Imports
 import MainLayout from "../layouts/main-layout.astro"
 import Header from "../components/Header.astro"
-import HomePage from "../components/home/HomePage.astro"
+import LeftSection from "../components/home/LeftSection.astro"
+import RightSection from "../components/home/RightSection.astro"
 ---
 
 <MainLayout>
   <div class="wrapper-container">
     <Header />
 
-    <HomePage />
+    <div class="grid grid-cols-[auto_1fr] content-center overflow-hidden">
+      <LeftSection />
+
+      <RightSection />
+    </div>
 
     <div class="fixed w-[100%] h-[200px] left-0 bottom-0">
       <svg
@@ -68,13 +73,13 @@ import HomePage from "../components/home/HomePage.astro"
       </svg>
     </div>
   </div>
-
-  <style>
-    .wrapper-container {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-rows: auto 1fr;
-    }
-  </style>
 </MainLayout>
+
+<style>
+  .wrapper-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+</style>
