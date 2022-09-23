@@ -6,40 +6,39 @@ import RightSection from "../components/RightSection.astro"
 ---
 
 <MainLayout>
-  <div class="container">
-    <div class="header h-[100vh] grid grid-rows-[auto_1fr]">
-      <nav class="nav grid grid-cols-2 items-center pt-[35px]">
-        <img src="/assets/svg/logo.svg" alt="" />
+  <div class="page">
+    <div class="header grid grid-cols-2 items-center pt-[20px]">
+      <img src="/assets/svg/logo.svg" alt="" />
 
-        <ul class="grid grid-flow-col justify-end gap-[24px] items-center">
-          <li class="text-center">
-            <a class="nav__link" href="#section--1">Home</a>
-          </li>
+      <ul class="">
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1">Home</a>
+        </li>
 
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">About</a>
-          </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2">About</a>
+        </li>
 
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">Services</a>
-          </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3">Services</a>
+        </li>
 
-          <li class="nav__item">
-            <a class="nav__link" href="#section--4">Projects</a>
-          </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--4">Projects</a>
+        </li>
 
-          <li class="nav__item">
-            <a class="nav__link" href="#section--5">Testimonials</a>
-          </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--5">Testimonials</a>
+        </li>
 
-          <li class="nav__item">
-            <a class="bg-glassmorphism rounded-[10px] w-[159px] h-[60px] grid justify-center items-center" href="#"
-              >Contact Me</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <li class="bg-glassmorphism rounded-[10px]">
+          <a href="#section--6" class="w-[159px] h-[60px] grid justify-center items-center">Contact Me</a>
+        </li>
+      </ul>
+    </div>
 
+    <!-- When screen is from pc grid-cols auto 1fr -->
+    <div class="home">
       <div class="grid grid-cols-[auto_1fr] content-center overflow-hidden">
         <LeftSection />
 
@@ -103,24 +102,40 @@ import RightSection from "../components/RightSection.astro"
         </svg>
       </div>
     </div>
-
-    <section class="section" id="section--1">
-      <h2>Home</h2>
-    </section>
-
-    <section class="section" id="section--2">
-      <h2>About</h2>
-    </section>
-
-    <section class="section" id="section--3">
-      <h2>Services</h2>
-    </section>
   </div>
 </MainLayout>
 
 <style>
-  section {
+  .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #011627;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    z-index: 999;
+  }
+
+  ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .home {
     height: 100vh;
-    transition: transform 1s, opacity 1s;
+    width: 100%;
+    display: grid;
+    align-content: center;
   }
 </style>
