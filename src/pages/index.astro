@@ -3,6 +3,7 @@
 import MainLayout from "../layouts/main-layout.astro"
 import LeftSection from "../components/LeftSection.astro"
 import RightSection from "../components/RightSection.astro"
+import Footer from "../components/Footer.astro"
 ---
 
 <MainLayout>
@@ -10,7 +11,7 @@ import RightSection from "../components/RightSection.astro"
     <div class="header grid grid-cols-2 items-center pt-[20px]">
       <img src="/assets/svg/logo.svg" alt="" />
 
-      <ul class="">
+      <ul>
         <li class="nav__item">
           <a class="nav__link" href="#section--1">Home</a>
         </li>
@@ -37,8 +38,7 @@ import RightSection from "../components/RightSection.astro"
       </ul>
     </div>
 
-    <!-- When screen is from pc grid-cols auto 1fr -->
-    <div class="home">
+    <div class="home" id="section--1">
       <div class="grid grid-cols-[auto_1fr] content-center overflow-hidden">
         <LeftSection />
 
@@ -102,10 +102,41 @@ import RightSection from "../components/RightSection.astro"
         </svg>
       </div>
     </div>
+
+    <section class="section" id="section--2">
+      <h2>About</h2>
+    </section>
+
+    <section class="section" id="section--3">
+      <h2>Services</h2>
+    </section>
+
+    <section class="section" id="section--4">
+      <h2>Projects</h2>
+    </section>
+
+    <section class="section" id="section--5">
+      <h2>Testimonials</h2>
+    </section>
+
+    <section class="section" id="section--6">
+      <h2>Contact</h2>
+    </section>
+
+    <Footer />
   </div>
 </MainLayout>
 
 <style>
+  #section--2,
+  #section--3,
+  #section--4,
+  #section--5,
+  #section--6 {
+    display: grid;
+    padding-top: 100px;
+  }
+
   .header {
     position: fixed;
     top: 0px;
@@ -121,6 +152,7 @@ import RightSection from "../components/RightSection.astro"
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 20px;
+    margin-bottom: 100px;
     z-index: 999;
   }
 
@@ -137,5 +169,13 @@ import RightSection from "../components/RightSection.astro"
     width: 100%;
     display: grid;
     align-content: center;
+  }
+
+  section {
+    height: 100vh;
+  }
+
+  section:nth-child(odd) {
+    background: #03233d;
   }
 </style>
