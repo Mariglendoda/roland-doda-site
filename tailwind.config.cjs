@@ -29,6 +29,10 @@ module.exports = {
         green: "#0fffc5",
         blue: "#18B9FF",
       },
+
+      borderRadius: {
+        10: "10px",
+      }
     },
   },
 
@@ -64,13 +68,13 @@ module.exports = {
           textTransform: "capitalize",
         },
 
-        ".p": {
+        ".description": {
           fontFamily: theme("fontFamily.poppins"),
           fontSize: theme("fontSize.16"),
           fontWeight: theme("fontWeight.regular"),
         },
 
-        ".p-small": {
+        ".subtitle": {
           fontFamily: theme("fontFamily.poppins"),
           fontSize: theme("fontSize.14"),
           fontWeight: theme("fontWeight.regular"),
