@@ -1,5 +1,6 @@
 ---
 // Component Imports
+import Header from "../components/Header.astro"
 import MainLayout from "../layouts/main-layout.astro"
 import LeftSection from "../components/LeftSection.astro"
 import RightSection from "../components/RightSection.astro"
@@ -8,35 +9,7 @@ import Footer from "../components/Footer.astro"
 
 <MainLayout>
   <div class="page">
-    <div class="header grid grid-cols-2 items-center pt-[20px]">
-      <img src="/assets/svg/logo.svg" alt="" />
-
-      <ul>
-        <li class="nav__item">
-          <a class="nav__link" href="#section--1">Home</a>
-        </li>
-
-        <li class="nav__item">
-          <a class="nav__link" href="#section--2">About</a>
-        </li>
-
-        <li class="nav__item">
-          <a class="nav__link" href="#section--3">Services</a>
-        </li>
-
-        <li class="nav__item">
-          <a class="nav__link" href="#section--4">Projects</a>
-        </li>
-
-        <li class="nav__item">
-          <a class="nav__link" href="#section--5">Testimonials</a>
-        </li>
-
-        <li class="bg-glassmorphism rounded-[10px]">
-          <a href="#section--6" class="w-[159px] h-[60px] grid justify-center items-center">Contact Me</a>
-        </li>
-      </ul>
-    </div>
+    <Header />
 
     <div class="home" id="section--1">
       <div class="grid grid-cols-[auto_1fr] content-center overflow-hidden">
@@ -135,33 +108,6 @@ import Footer from "../components/Footer.astro"
   #section--6 {
     display: grid;
     padding-top: 100px;
-  }
-
-  .header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background: #011627;
-    justify-content: space-evenly;
-    max-width: 1440px;
-    margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
-    z-index: 999;
-  }
-
-  ul {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
   }
 
   .home {
