@@ -8,7 +8,7 @@ import TailwindIcon from "@icons/Tailwind.vue"
 
 <template>
   <div class="relative">
-    <img rel="preload" as="image" src="/assets/svg/img.png" alt="Code snippet" />
+    <img src="/assets/svg/img.png" alt="Code snippet" />
 
     <VueIcon class="top-[142px] left-[-26px] z-10" />
 
