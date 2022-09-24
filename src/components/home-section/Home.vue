@@ -6,7 +6,7 @@ import RightSection from "./Right.vue"
 </script>
 
 <template>
-  <section :id="hrefs.home">
+  <section :id="hrefs.home" class="grid grid-cols-2 items-center">
     <LeftSection />
     <RightSection />
   </section>

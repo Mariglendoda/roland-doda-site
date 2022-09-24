@@ -3,7 +3,7 @@ import Circle from "./Circle.vue"
 </script>
 
 <template>
-  <div class="absolute top-[230px] left-[260px] z-10">
+  <div class="absolute">
     <Circle>
       <svg width="48" height="32.6" viewBox="0 0 53 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1544_1160)">
