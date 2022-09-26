@@ -1,13 +1,16 @@
 ---
 // Component Imports
-import Header from "../components/Header.vue"
 import MainLayout from "../layouts/main-layout.astro"
+import Header from "../components/Header.vue"
+import HomeSection from "@components/home-section/Home.vue"
 import Footer from "../components/Footer.astro"
 ---
 
 <MainLayout>
-  <div class="page">
-    <Header />
+  <div class="relative">
+    <Header class="absolute w-full" />
+
+    <HomeSection class="h-screen" />
 
     <Footer />
   </div>

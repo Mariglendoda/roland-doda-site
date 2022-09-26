@@ -1,0 +1,27 @@
+<script setup lang="ts">
+import Circle from "./Circle.vue"
+</script>
+
+<template>
+  <div class="absolute">
+    <Circle>
+      <svg width="48" height="32.6" viewBox="0 0 53 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1544_1160)">
+          <path
+            d="M23.206 1.90247C21.7329 -0.633994 18.0498 -0.633994 16.5765 1.90247L0.520374 29.5459C-0.952714 32.0823 0.888851 35.2529 3.83544 35.2529H16.3694C15.1104 34.1511 14.6441 32.245 15.5971 30.6098L27.7569 9.73789L23.206 1.90247Z"
+            fill="#80EEC0"
+          ></path>
+          <path
+            d="M33.379 7.96604C34.5982 5.89088 37.6463 5.89088 38.8655 7.96604L52.1533 30.5832C53.3725 32.6586 51.8485 35.2528 49.4098 35.2528H22.8345C20.396 35.2528 18.872 32.6586 20.0912 30.5832L33.379 7.96604Z"
+            fill="#00DC82"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id="clip0_1544_1160">
+            <rect width="52.5833" height="35.3743" fill="white"></rect>
+          </clipPath>
+        </defs>
+      </svg>
+    </Circle>
+  </div>
+</template>
