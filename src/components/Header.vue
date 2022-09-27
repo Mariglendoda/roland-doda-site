@@ -11,7 +11,7 @@ const links = [
 </script>
 
 <template>
-  <header class="grid grid-cols-[auto,1fr,auto] items-center gap-6 pt-6">
+  <header class="grid grid-cols-[auto,1fr,auto] items-center gap-6">
     <div class="relative w-[165px] h-[110px]">
       <img class="absolute top-[30px]" src="/assets/svg/logo.svg" alt="Roland's logo" />
     </div>
