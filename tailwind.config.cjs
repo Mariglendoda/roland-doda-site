@@ -28,11 +28,12 @@ module.exports = {
         orange: "#ee7a0f",
         green: "#0fffc5",
         blue: "#18B9FF",
+        graystarry: "#2E4455",
       },
 
       borderRadius: {
         10: "10px",
-      }
+      },
     },
   },
 
