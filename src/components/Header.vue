@@ -7,7 +7,6 @@ const links = [
   { name: "Services", href: hrefs.services },
   { name: "Projects", href: hrefs.projects },
   { name: "Testimonials", href: hrefs.testimonials },
-  { name: "Contact", href: hrefs.contact },
 ]
 </script>
 
