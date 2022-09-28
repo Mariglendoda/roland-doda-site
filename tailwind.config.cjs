@@ -48,6 +48,10 @@ module.exports = {
           background: "linear-gradient(168deg, #ffffff66 0%, #ffffff1a 100%)",
         },
 
+        ".rgba": {
+          background: "rgba(255, 255, 255, 0.1)",
+        },
+
         ".h1": {
           fontFamily: theme("fontFamily.poppins"),
           fontSize: theme("fontSize.48"),
