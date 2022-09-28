@@ -9,13 +9,13 @@ import Chart from "./Chart.vue"
 
 <template>
   <section :id="hrefs.home" class="grid grid-rows-[auto_1fr_auto] items-center">
-    <Header class="w-full" />
+    <Header />
 
     <div class="grid grid-cols-2 items-center">
       <LeftSection />
       <RightSection />
     </div>
 
-    <Chart class="max-w-[1440px] sticky w-full" />
+    <Chart />
   </section>
 </template>

@@ -28,11 +28,12 @@ module.exports = {
         orange: "#ee7a0f",
         green: "#0fffc5",
         blue: "#18B9FF",
+        graystarry: "#2E4455",
       },
 
       borderRadius: {
         10: "10px",
-      }
+      },
     },
   },
 
@@ -45,6 +46,10 @@ module.exports = {
 
         ".bg-glassmorphism": {
           background: "linear-gradient(168deg, #ffffff66 0%, #ffffff1a 100%)",
+        },
+
+        ".rgba": {
+          background: "rgba(255, 255, 255, 0.1)",
         },
 
         ".h1": {
