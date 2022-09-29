@@ -57,6 +57,21 @@ const recommendations = ref([
       year: "2022",
     },
   },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C5603AQHj-QNGp7_Cwg/profile-displayphoto-shrink_100_100/0/1516244961518?e=1669852800&v=beta&t=9U9-xAXpiCtURIlMSZDgvMHkDo48eIGmn8uHOgWTlKQ",
+    fullName: "Nels Rune Jensen",
+    job: "Co-founder of ConsortiaManager",
+    description:
+      "Over a couple of years, Roland created and maintained the Frontend of one of our main services, so he knows how to manage projects from overall structure to the tiniest details. As an expert in Vue.js, he is on top of the latest developments in his field and takes pride in always doing his best possible work. As a person, Roland can be counted on, and trusted to manage his time efficiently, even if working remotely. On a more personal note, he has a good personality and is easy to get along with. I have enjoyed working with Roland and will recommend him for all front-end projects, big or small.",
+    date: {
+      day: "09",
+      month: "May",
+      year: "2022",
+    },
+  },
+])
 </script>
 
 <template>
