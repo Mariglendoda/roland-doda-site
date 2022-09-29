@@ -17,6 +17,22 @@ const recommendations = ref([
       periodTime: "PM",
     },
   },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C4E03AQGo6MLJw7NxBQ/profile-displayphoto-shrink_200_200/0/1653314535634?e=1669852800&v=beta&t=4483BPWxK14E7BER0cjcb1FHzqpOZ8AusNmS1DRnLrc",
+    fullName: "Fation Curo",
+    job: "UX UI Designer",
+    description:
+      "Over a couple of years, Roland created and maintained the Frontend of one of our main services, so he knows how to manage projects from overall structure to the tiniest details. As an expert in Vue.js, he is on top of the latest developments in his field and takes pride in always doing his best possible work.",
+    date: {
+      day: "30",
+      month: "June",
+      year: "2022",
+      clock: "09:00",
+      periodTime: "PM",
+    },
+  },
 ])
 </script>
 
