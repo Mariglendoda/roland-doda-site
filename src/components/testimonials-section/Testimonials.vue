@@ -13,8 +13,6 @@ const recommendations = ref([
       day: "29",
       month: "September",
       year: "2022",
-      clock: "12:42",
-      periodTime: "PM",
     },
   },
 
@@ -29,8 +27,6 @@ const recommendations = ref([
       day: "30",
       month: "June",
       year: "2022",
-      clock: "09:00",
-      periodTime: "PM",
     },
   },
 
@@ -45,8 +41,6 @@ const recommendations = ref([
       day: "26",
       month: "September",
       year: "2022",
-      clock: "08:13",
-      periodTime: "AM",
     },
   },
 
@@ -61,11 +55,8 @@ const recommendations = ref([
       day: "26",
       month: "September",
       year: "2022",
-      clock: "08:13",
-      periodTime: "AM",
     },
   },
-])
 </script>
 
 <template>
