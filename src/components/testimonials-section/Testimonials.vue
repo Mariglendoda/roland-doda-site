@@ -33,6 +33,38 @@ const recommendations = ref([
       periodTime: "PM",
     },
   },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C5603AQGBhZra6-lYOg/profile-displayphoto-shrink_100_100/0/1516435380525?e=1669852800&v=beta&t=RaDt2X9jyCPTlg4H2lcvc9Uf-GZbieyisy56okuVwms",
+    fullName: "Aleksandar Mitrovski",
+    job: "Managed Roland directly",
+    description:
+      "Roland is an excellent engineer, expert in his field, always following the latest trends and using the latest tools. He is very knowledgeable and very approachable and easy to collaborate with. It is a pleasure to have him as a colleague",
+    date: {
+      day: "26",
+      month: "September",
+      year: "2022",
+      clock: "08:13",
+      periodTime: "AM",
+    },
+  },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C4D03AQEMPblckYhgzA/profile-displayphoto-shrink_200_200/0/1608546220310?e=1669852800&v=beta&t=lcdSBAd5s-ouridkrxQnXxKedZT_-6TrKOCfUcEyCMQ",
+    fullName: "C. Engin BİLİCİ",
+    job: "Full Stack Developer",
+    description:
+      "Roland is not only a very technical developer but also a good learner and a person who doesn't stop improving his skills. He always keeps himself updated with the latest tech stack and helps his team updated. For the limited time we worked together, we helped each other a lot and learnt much together.",
+    date: {
+      day: "26",
+      month: "September",
+      year: "2022",
+      clock: "08:13",
+      periodTime: "AM",
+    },
+  },
 ])
 </script>
 
@@ -72,9 +104,7 @@ const recommendations = ref([
           </div>
 
           <div class="grid grid-flow-col justify-start items-center gap-[8px] subtitle">
-            <div class="date">{{ reco.date.day }} {{ reco.date.month }}, {{ reco.date.year }}</div>
-            <div class="w-[8px] h-[8px] rounded-full bg-white"></div>
-            <div>{{ reco.date.clock }} {{ reco.date.periodTime }}</div>
+            <div class="date">{{ reco.date.day }} {{ reco.date.month }} {{ reco.date.year }}</div>
           </div>
         </div>
       </div>
