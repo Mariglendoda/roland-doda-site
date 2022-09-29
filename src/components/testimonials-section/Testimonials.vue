@@ -99,6 +99,20 @@ const recommendations = ref([
       year: "2022",
     },
   },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C5603AQFjI_laIvzy3Q/profile-displayphoto-shrink_100_100/0/1516871033807?e=1669852800&v=beta&t=qYZzo5HnONtGYvV1tj7NfvgY4OCNxlwFb8sCBOSx38Q",
+    fullName: "Denitsa M.",
+    job: "Software Engineer at Trustpilot",
+    description:
+      "I had the great pleasure of working with Roland for 2 years while at ConsortiaManager.I found him to be incredibly devoted to his work and always eager to take in new knowledge. And he probably knows Vue.js better than the creator himself! :) Roland is patient and loves helping others, which you can also tell by his Stack Overflow profile.Him working on frontend and me on backend, with no other developers around us, we developed this habit of complimenting and praising each other's work. It might've seemed awkward to an observer but it was our funny way of appreciating each other's work and I miss it! :) Roland is a great team mate that anyone will be lucky to have!",
+    date: {
+      day: "09",
+      month: "February",
+      year: "2022",
+    },
+  },
 ])
 </script>
 
