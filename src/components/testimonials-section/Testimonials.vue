@@ -71,6 +71,34 @@ const recommendations = ref([
       year: "2022",
     },
   },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C5603AQHzGby02WH59A/profile-displayphoto-shrink_100_100/0/1595320720588?e=1669852800&v=beta&t=-NtAgbFlhxXNCB-132CFACSIGMvpwzDQdSssAwGuI1k",
+    fullName: "Urs Renke",
+    job: "You’ve got questions, we’ve got answers.",
+    description:
+      "Roland does not only work according to the project plan but also thinks along with the project and does everything to reach the project goals and deadlines. He has overcome some difficult technical challenges and has been able to implement new features that were unknown to him in a neat and clean way. Furthermore, despite stressful work, he is always in a good mood and has an open ear for any requests.",
+    date: {
+      day: "06",
+      month: "May",
+      year: "2022",
+    },
+  },
+
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/C5603AQEXzCQ49bKOwQ/profile-displayphoto-shrink_100_100/0/1522321482653?e=1669852800&v=beta&t=UkVcaFSH8_5eBLLbkEUmprLRKaYtP8b29AUlMVv1rBA",
+    fullName: "Tejs Grevstad",
+    job: "Co-Founder at ConsortiaManager",
+    description:
+      "Roland is not only a great Vue developer but always keen to learn and be up to date with the most recent developments. He is very independent and self-motivated. He has managed many difficult technical challenges in a good spirit and with well-proven results. On top of that he is a great guy - very kind and liked by all colleagues.",
+    date: {
+      day: "30",
+      month: "March",
+      year: "2022",
+    },
+  },
 ])
 </script>
 
