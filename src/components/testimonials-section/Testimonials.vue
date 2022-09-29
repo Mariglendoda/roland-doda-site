@@ -1,4 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue"
+
+const recommendations = ref([
+  {
+    image:
+      "https://media-exp1.licdn.com/dms/image/D4D03AQETng5FkapCTw/profile-displayphoto-shrink_200_200/0/1661540780094?e=1669852800&v=beta&t=hF-1YC8Pef4xnQVUB29S4E-IBrvGRKuCd_NpN4fUrZs",
+    fullName: "Mariglen Doda",
+    job: "Developer & UX UI Designer",
+    description:
+      "Over a couple of years, Roland created and maintained the Frontend of one of our main services, so he knows how to manage projects from overall structure to the tiniest details. As an expert in Vue.js, he is on top of the latest developments in his field and takes pride in always doing his best possible work. As a person, Roland can be counted on, and trusted to manage his time efficiently, even if working remotely. On a more personal note, he has a good personality and is easy to get along with. I have enjoyed working with Roland and will recommend him for all front-end projects, big or small.",
+    date: {
+      day: "29",
+      month: "September",
+      year: "2022",
+      clock: "12:42",
+      periodTime: "PM",
+    },
+  },
+])
+</script>
 
 <template>
   <div id="testimonials">
@@ -17,77 +37,28 @@
     </div>
 
     <div class="mt-[30px]">
-      <div class="cards grid grid-cols-3 items-start">
-        <div class="grid gap-[10px] w-[400px] bg-glassmorphism p-4 rounded-[20px]">
+      <div class="grid grid-cols-3 items-start">
+        <div class="grid gap-[10px] w-[400px] bg-glassmorphism p-4 rounded-[20px]" v-for="reco in recommendations">
           <div class="flex items-center gap-[15px]">
-            <div class="img w-[50px] h-[50px] rounded-full bg-white"></div>
+            <div
+              class="img w-[50px] h-[50px] rounded-full bg-cover"
+              :style="{ backgroundImage: ` url(${reco.image})` }"
+            ></div>
 
             <div>
-              <div class="description">Nels Rune Jensen</div>
-              <div class="subtitle">Co-founder of ConsortiaManager</div>
+              <div class="description">{{ reco.fullName }}</div>
+              <div class="subtitle">{{ reco.job }}</div>
             </div>
           </div>
 
           <div class="subtitle">
-            Over a couple of years, Roland created and maintained the Frontend of one of our main services, so he knows
-            how to manage projects from overall structure to the tiniest details. As an expert in Vue.js, he is on top
-            of the latest developments in his field and takes pride in always doing his best possible work. As a person,
-            Roland can be counted on, and trusted to manage his time efficiently, even if working remotely. On a more
-            personal note, he has a good personality and is easy to get along with. I have enjoyed working with Roland
-            and will recommend him for all front-end projects, big or small.
+            {{ reco.description }}
           </div>
 
           <div class="grid grid-flow-col justify-start items-center gap-[8px] subtitle">
-            <div class="date">09 May, 2022</div>
+            <div class="date">{{ reco.date.day }} {{ reco.date.month }}, {{ reco.date.year }}</div>
             <div class="w-[8px] h-[8px] rounded-full bg-white"></div>
-            <div>08:13 AM</div>
-          </div>
-        </div>
-
-        <div class="grid gap-[10px] w-[400px] bg-glassmorphism p-4 rounded-[20px]">
-          <div class="flex items-center gap-[15px]">
-            <div class="img w-[50px] h-[50px] rounded-full bg-white"></div>
-
-            <div>
-              <div class="description">Mariglen Doda</div>
-              <div class="subtitle">Developer & UX UI Designer</div>
-            </div>
-          </div>
-
-          <div class="subtitle">
-            Over a couple of years, Roland created and maintained the Frontend of one of our main services, so he knows
-            how to manage projects from overall structure to the tiniest details. As an expert in Vue.js, he is on top
-            of the latest developments in his field and takes pride in always doing his best possible work.
-          </div>
-
-          <div class="grid grid-flow-col justify-start items-center gap-[8px] subtitle">
-            <div class="date">30 Jun, 2022</div>
-            <div class="w-[8px] h-[8px] rounded-full bg-white"></div>
-            <div>04:15 AM</div>
-          </div>
-        </div>
-
-        <div class="grid gap-[10px] w-[400px] bg-glassmorphism p-4 rounded-[20px]">
-          <div class="flex items-center gap-[15px]">
-            <div class="img w-[50px] h-[50px] rounded-full bg-white"></div>
-
-            <div>
-              <div class="description">Urs Renke</div>
-              <div class="subtitle">Web Designer</div>
-            </div>
-          </div>
-
-          <div class="subtitle">
-            Roland does not only work according to the project plan but also thinks along with the project and does
-            everything to reach the project goals and deadlines. He has overcome some difficult technical challenges and
-            has been able to implement new features that were unknown to him in a neat and clean way. Furthermore,
-            despite stressful work, he is always in a good mood and has an open ear for any requests.
-          </div>
-
-          <div class="grid grid-flow-col justify-start items-center gap-[8px] subtitle">
-            <div class="date">06 May, 2022</div>
-            <div class="w-[8px] h-[8px] rounded-full bg-white"></div>
-            <div>08:13 AM</div>
+            <div>{{ reco.date.clock }} {{ reco.date.periodTime }}</div>
           </div>
         </div>
       </div>
