@@ -18,38 +18,38 @@
       </div>
 
       <div class="grid justify-start gap-[10px]">
-        <img src="../../../public/assets/images/notifications.png" alt="" />
+        <img src="/assets/images/notifications.png" alt="" />
 
         <div class="grid">
           <div class="grid align-center justify-start align-center relative left-12 top-10">
             <div class="circle w-[30px] h-[30px] bg-[#D36A6B] blur-[20px] rounded-full"></div>
-            <img class="absolute" src="../../../public/assets/images/notification.png" alt="" />
+            <img class="absolute" src="/assets/images/notification.png" alt="" />
           </div>
 
           <div class="grid align-center justify-start align-center relative -top-10 left-[370px]">
             <div class="circle w-[30px] h-[30px] bg-[#F7FBFF] blur-[20px] rounded-full"></div>
-            <img class="absolute" src="../../../public/assets/images/comments.png" alt="" />
+            <img class="absolute" src="/assets/images/comments.png" alt="" />
           </div>
         </div>
 
-        <img class="absolute" src="../../../public/assets/images/ilustration.png" alt="" />
+        <img class="absolute" src="/assets/images/ilustration.png" alt="" />
       </div>
     </div>
 
     <div class="grid justify-end gap-[20px]">
       <div class="grid grid-cols-[auto,auto,auto] justify-center gap-[120px]">
         <div class="grid justify-items-center gap-[10px]">
-          <img src="../../../public/assets/images/phone.png" alt="" />
+          <img src="/assets/images/phone.png" alt="" />
           <div>+355676457173</div>
         </div>
 
         <div class="grid justify-items-center gap-[10px]">
-          <img src="../../../public/assets/images/gmail.png" alt="" />
+          <img src="/assets/images/gmail.png" alt="" />
           <div>rolanddoda2014@gmail.com</div>
         </div>
 
         <div class="grid justify-items-center gap-[10px]">
-          <img src="../../../public/assets/images/location.png" alt="" />
+          <img src="/assets/images/location.png" alt="" />
           <div>Tirana, Albania</div>
         </div>
       </div>

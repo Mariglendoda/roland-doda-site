@@ -4,13 +4,16 @@ import MainLayout from "../layouts/main-layout.astro"
 import HomeSection from "@components/home-section/Home.vue"
 import Contact from "@components/contact-section/Contact.vue"
 import Footer from "../components/Footer.astro"
+import Testimonials from "@components/testimonials-section/Testimonials.vue"
 ---
 
 <MainLayout>
   <div class="relative">
     <HomeSection class="h-screen" />
 
-    <Contact class="h-screen" />
+    <Testimonials />
+
+    <!-- <Contact class="h-screen" /> -->
 
     <Footer />
   </div>
