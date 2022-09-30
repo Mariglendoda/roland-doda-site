@@ -48,6 +48,11 @@ module.exports = {
           background: "linear-gradient(168deg, #ffffff66 0%, #ffffff1a 100%)",
         },
 
+        ".bg-testimonial": {
+          background: "linear-gradient(180deg, #011627 5.53%, rgba(1, 22, 39, 0) 100%)",
+          transform: "matrix(1, 0, 0, -1, 0, 0)",
+        },
+
         ".rgba": {
           background: "rgba(255, 255, 255, 0.1)",
         },
