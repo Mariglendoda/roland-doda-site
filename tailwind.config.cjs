@@ -29,6 +29,8 @@ module.exports = {
         green: "#0fffc5",
         blue: "#18B9FF",
         graystarry: "#2E4455",
+        even: "#03233D",
+        yellow: "#FAF2C1",
       },
 
       borderRadius: {
@@ -53,8 +55,19 @@ module.exports = {
           transform: "matrix(1, 0, 0, -1, 0, 0)",
         },
 
+        ".bg-box": {
+          background: "linear-gradient(180.67deg, rgba(255, 255, 255, 0.4) -136.79%, rgba(255, 255, 255, 0.1) 49.83%)",
+          backdropFilter: "blur(45px)",
+          border: "1px solid #FFFFFF",
+          borderRadius: "20px",
+        },
+
         ".rgba": {
           background: "rgba(255, 255, 255, 0.1)",
+        },
+
+        ".bg-hide": {
+          background: "linear-gradient(177.46deg, rgba(1, 22, 39, 0) -364.45%, #011627 97.88%)",
         },
 
         ".h1": {
