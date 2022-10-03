@@ -2,14 +2,17 @@
 // Component Imports
 import MainLayout from "../layouts/main-layout.astro"
 import HomeSection from "@components/home-section/Home.vue"
+import About from "@components/about-section/About.vue"
 import Contact from "@components/contact-section/Contact.vue"
 import Footer from "../components/Footer.astro"
 import Testimonials from "@components/testimonials-section/Testimonials.vue"
 ---
 
 <MainLayout>
-  <div class="relative">
+  <div class="relative grid gap-[100px]">
     <HomeSection class="h-screen" />
+
+    <About class="h-screen" />
 
     <Testimonials />
 
