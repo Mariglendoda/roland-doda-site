@@ -91,6 +91,13 @@ module.exports = {
           textTransform: "capitalize",
         },
 
+        ".h4": {
+          fontFamily: theme("fontFamily.poppins"),
+          fontSize: theme("fontSize.16"),
+          fontWeight: theme("fontWeight.bold"),
+          textTransform: "capitalize",
+        },
+
         ".description": {
           fontFamily: theme("fontFamily.poppins"),
           fontSize: theme("fontSize.16"),
