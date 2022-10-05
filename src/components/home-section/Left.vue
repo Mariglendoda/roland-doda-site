@@ -68,7 +68,7 @@
         </button>
       </div>
 
-      <button class="p w-[131px] h-[60px] bg-glassmorphism rounded-[10px] capitalize">resume</button>
+      <button class="p w-[161px] h-[63px] bg-glassmorphism rounded-[10px] capitalize">download CV</button>
     </div>
   </div>
 </template>
