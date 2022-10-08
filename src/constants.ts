@@ -3,6 +3,7 @@ export const hrefs = {
   about: "#about",
   services: "#services",
   projects: "#projects",
+  articles: "#articles",
   testimonials: "#testimonials",
   contact: "#contact",
 }
