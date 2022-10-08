@@ -2,7 +2,7 @@
 
 <template>
   <div id="contact" class="grid grid-cols-[auto_1fr] items-start content-center">
-    <div class="grid content-center gap-[20px]">
+    <div class="relative grid content-center gap-[20px]">
       <div>
         <div class="relative grid content-center items-center w-[100px]">
           <div class="absolute right-0 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
@@ -21,12 +21,12 @@
         <img src="/assets/images/notifications.png" alt="" />
 
         <div class="grid">
-          <div class="grid align-center justify-start align-center relative left-12 top-10">
+          <div class="grid align-center justify-start align-center relative left-3 top-5">
             <div class="circle w-[30px] h-[30px] bg-[#D36A6B] blur-[20px] rounded-full"></div>
             <img class="absolute" src="/assets/images/notification.png" alt="" />
           </div>
 
-          <div class="grid align-center justify-start align-center relative -top-10 left-[370px]">
+          <div class="grid align-center justify-start align-center relative -top-20 left-[250px]">
             <div class="circle w-[30px] h-[30px] bg-[#F7FBFF] blur-[20px] rounded-full"></div>
             <img class="absolute" src="/assets/images/comments.png" alt="" />
           </div>
