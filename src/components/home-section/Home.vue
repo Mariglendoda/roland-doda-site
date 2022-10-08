@@ -2,7 +2,7 @@
 import { hrefs } from "../../constants"
 // Components
 import LeftSection from "./Left.vue"
-import RightSection from "./Right.vue"
+import RightSection from "./right/Right.vue"
 import Header from "@components/Header.vue"
 </script>
 

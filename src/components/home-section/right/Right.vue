@@ -7,7 +7,7 @@ import TailwindIcon from "@icons/Tailwind.vue"
 </script>
 
 <template>
-  <div class="relative">
+  <!-- <div class="relative">
     <div class="absolute w-[566px] h-[150px] top-[80px] bg-green rounded-[200px] -z-10 blur-[160px]"></div>
 
     <img src="/assets/svg/img.png" alt="Code snippet" />
@@ -50,5 +50,5 @@ import TailwindIcon from "@icons/Tailwind.vue"
         </linearGradient>
       </defs>
     </svg>
-  </div>
+  </div> -->
 </template>
