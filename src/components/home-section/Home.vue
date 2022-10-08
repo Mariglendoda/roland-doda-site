@@ -4,7 +4,6 @@ import { hrefs } from "../../constants"
 import LeftSection from "./Left.vue"
 import RightSection from "./Right.vue"
 import Header from "@components/Header.vue"
-import Chart from "./Chart.vue"
 </script>
 
 <template>
@@ -15,7 +14,5 @@ import Chart from "./Chart.vue"
       <LeftSection />
       <RightSection />
     </div>
-
-    <Chart />
   </section>
 </template>
