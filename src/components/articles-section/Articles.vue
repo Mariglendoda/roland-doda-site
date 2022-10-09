@@ -52,13 +52,13 @@ const articles = ref([
       </div>
     </div>
 
-    <div class="overflow-x-auto grid grid-flow-col mt-[20px] justify-start gap-[24px] items-center">
-      <div class="grid gap-[10px] w-[400px]" v-for="article of articles">
+    <div class="overflow-x-auto hide-scrollbar grid grid-flow-col justify-start gap-6 items-center">
+      <div class="grid gap-[10px] w-[350px]" v-for="article of articles">
         <img :src="article.img" alt="" />
 
-        <div class="h2">{{ article.title }}</div>
+        <div class="h3">{{ article.title }}</div>
 
-        <div>{{ article.description }}</div>
+        <div class="ellipsis-3">{{ article.description }}</div>
       </div>
     </div>
   </div>

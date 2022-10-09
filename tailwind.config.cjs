@@ -109,6 +109,24 @@ module.exports = {
           fontSize: theme("fontSize.14"),
           fontWeight: theme("fontWeight.regular"),
         },
+        ".hide-scrollbar": {
+          /* IE and Edge */
+          "-ms-overflow-style": "none",
+
+          /* Firefox */
+          "scrollbar-width": "none",
+
+          /* Safari and Chrome */
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+        },
+        ".ellipsis-3": {
+          display: "-webkit-box",
+          "-webkit-line-clamp": "3",
+          "-webkit-box-orient": "vertical",
+          overflow: "hidden",
+        },
       })
     },
   ],
