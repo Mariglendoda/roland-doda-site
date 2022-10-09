@@ -1,7 +1,96 @@
 ---
 import CodeSnippet from "./CodeSnippet.vue"
+import VueIcon from "../svg/Vue.vue"
 ---
 
 <div>
-  <CodeSnippet client:only="vue" />
+  <div class="skills">
+    <div class="orbit">
+      <div class="skill">
+        <VueIcon />
+      </div>
+    </div>
+    <CodeSnippet client:only="vue" />
+  </div>
 </div>
+
+<style lang="scss">
+  .skills {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    margin: -32px;
+
+    transform: rotateX(76deg) rotateY(2deg);
+    transform-style: preserve-3d;
+
+    .orbit,
+    .skill {
+      transform-style: preserve-3d;
+    }
+
+    .orbit {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #0fffc7;
+      border-width: 1px;
+      border-style: solid;
+
+      border-radius: 50%;
+      animation: orbit 10s linear infinite;
+
+      .skill {
+        position: absolute;
+        left: 50%;
+        top: -36px;
+        animation: invert-orbit 10s linear infinite;
+      }
+    }
+  }
+
+  @-webkit-keyframes orbit {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  @keyframes orbit {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  /*
+In order to invert the rotation, do the rotate* transforms in reverse order.
+
+Here, we rotated the system with rotateX(75deg) rotateY(-30deg), and then we are animating the rotation of the orbit with rotateZ(0-360deg). To reverse that, we need to reverse the last transform applied (rotateZ), then rotateY, then rotateX.
+
+The rotateX/Y reversal is easy since it's not animated, so just use its opposite (30deg, -75deg). The rotateZ is trickier since it's animating, but since it's rotating from 0 to 360, we just need to animate the satellite from 360 to 0.
+*/
+  @-webkit-keyframes invert-orbit {
+    0% {
+      transform: rotateZ(360deg) rotateY(30deg) rotateX(-75deg);
+    }
+
+    100% {
+      transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    }
+  }
+  @keyframes invert-orbit {
+    0% {
+      transform: rotateZ(360deg) rotateY(30deg) rotateX(-75deg);
+    }
+
+    100% {
+      transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    }
+  }
+</style>

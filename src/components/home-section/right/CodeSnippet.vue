@@ -41,6 +41,8 @@ createPortfolio()
   background: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236));
   min-width: 250px;
   max-width: 570px;
+
+  transform: rotateY(-2deg) rotateX(-80deg);
 }
 
 .code-snippet {
