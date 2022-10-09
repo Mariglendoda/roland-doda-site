@@ -1,0 +1,16 @@
+---
+import { hrefs } from "../../constants"
+// Components
+import LeftSection from "./Left.vue"
+import RightSection from "./right/Right.astro"
+import Header from "@components/Header.vue"
+---
+
+<section id={hrefs.home} class="grid grid-rows-[auto_1fr_auto] items-center">
+  <Header />
+
+  <div class="grid grid-cols-2 items-center">
+    <LeftSection />
+    <RightSection />
+  </div>
+</section>
