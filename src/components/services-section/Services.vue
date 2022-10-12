@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ServiceItem from "./ServiceItem.vue"
+</script>
 
 <template>
-  <div id="services">
+  <div id="services" class="grid gap-10 content-start">
     <div class="grid gap-2 content-center w-[400px]">
       <div class="relative grid content-center items-center w-[100px]">
         <div class="absolute right-2 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
@@ -14,6 +16,10 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
         Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
       </div>
+    </div>
+
+    <div class="grid grid-cols-3 grid-rows-[1fr,1fr] gap-[60px]">
+      <ServiceItem />
     </div>
   </div>
 </template>
