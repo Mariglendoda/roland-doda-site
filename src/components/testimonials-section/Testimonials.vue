@@ -148,7 +148,7 @@ const recommendations = ref([
 <template>
   <div id="testimonials">
     <div class="relative grid gap-[30px] max-h-[1240px] overflow-hidden">
-      <div class="grid content-center w-[400px] pt-[10px]">
+      <div class="grid content-center w-[400px]">
         <div class="relative grid content-center items-center w-[100px]">
           <div class="absolute right-2 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
           <div class="subtitle text-orange">Testimonials</div>
