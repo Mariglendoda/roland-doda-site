@@ -127,6 +127,13 @@ module.exports = {
           "-webkit-box-orient": "vertical",
           overflow: "hidden",
         },
+
+        ".service": {
+          background: "#011c32",
+          boxShadow:
+            "0px 8px 40px rgba(44, 97, 123, 0.25), inset 10px 10px 24px rgba(12, 53, 86, 0.45), inset -10px -10px 28px #010e18",
+          backdropFilter: "blur(2.5px)",
+        },
       })
     },
   ],
