@@ -58,12 +58,3 @@ const services = ref([
     </div>
   </div>
 </template>
-
-<style>
-/* .service-item:hover {
-  background: #011c32;
-  box-shadow: 0px 8px 40px rgba(44, 97, 123, 0.25), inset 10px 10px 24px rgba(12, 53, 86, 0.45),
-    inset -10px -10px 28px #010e18;
-  backdrop-filter: blur(2.5px);
-} */
-</style>
