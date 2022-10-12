@@ -43,7 +43,7 @@ const services = ref([
 
 <template>
   <div
-    class="grid justify-items-center text-center gap-[15px] w-[370px] p-10 bg-primary rounded-10"
+    class="hover:service grid justify-items-center text-center gap-[15px] w-[370px] p-10 bg-primary rounded-10"
     v-for="service of services"
     :key="service.title"
   >
@@ -58,3 +58,12 @@ const services = ref([
     </div>
   </div>
 </template>
+
+<style>
+/* .service-item:hover {
+  background: #011c32;
+  box-shadow: 0px 8px 40px rgba(44, 97, 123, 0.25), inset 10px 10px 24px rgba(12, 53, 86, 0.45),
+    inset -10px -10px 28px #010e18;
+  backdrop-filter: blur(2.5px);
+} */
+</style>
