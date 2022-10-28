@@ -4,8 +4,8 @@ import { hrefs } from "../constants"
 const links = [
   { name: "Home", href: hrefs.home },
   { name: "About", href: hrefs.about },
-  { name: "Services", href: hrefs.services },
   { name: "Projects", href: hrefs.projects },
+  { name: "Services", href: hrefs.services },
   { name: "Articles", href: hrefs.articles },
   { name: "Testimonials", href: hrefs.testimonials },
 ]
