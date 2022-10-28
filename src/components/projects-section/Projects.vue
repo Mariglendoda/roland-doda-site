@@ -1,4 +1,56 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue"
+
+const projects = ref([
+  {
+    name: "☕ Coffee Street",
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Et faucibus viverraasdasasd...",
+    image: "assets/images/card1.png",
+    link: "https://google.com",
+    views: "28,628",
+  },
+
+  {
+    name: "🥯 Bakery Website",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et faucibus viverraasdasasd...",
+    image: "assets/images/card2.png",
+    link: "https://google.com",
+    views: "28,628",
+  },
+
+  {
+    name: "🍔 Need Food",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et faucibus viverraasdasasd...",
+    image: "assets/images/card3.png",
+    link: "https://google.com",
+    views: "28,628",
+  },
+
+  {
+    name: "✈️ Travel App",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et faucibus viverraasdasasd...",
+    image: "assets/images/card4.png",
+    link: "https://google.com",
+    views: "28,628",
+  },
+
+  {
+    name: "👟 Shoes Store",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et faucibus viverraasdasasd...",
+    image: "assets/images/card5.png",
+    link: "https://google.com",
+    views: "28,628",
+  },
+
+  {
+    name: "✅ ClearMix",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et faucibus viverraasdasasd...",
+    image: "assets/images/card6.png",
+    link: "https://google.com",
+    views: "28,628",
+  },
+])
+</script>
 
 <template>
   <div id="projects" class="grid gap-10 content-start">
@@ -16,17 +68,17 @@
       </div>
     </div>
 
-    <div class="cards-work">
-      <div class="card-work">
+    <div class="cards-work overflow-x-auto hide-scrollbar grid grid-flow-col justify-start gap-6 items-center">
+      <div class="card-work" v-for="(project, index) of projects" :key="index">
         <div class="card-work__image w-[380px] h-[283px]">
-          <img src="../../components/projects-section/icons/portfolio.png" alt="work" />
+          <img :src="project.image" :alt="project.name" />
         </div>
 
         <div class="card">
-          <div class="card-work__title h3">Bakery WebSite</div>
+          <div class="card-work__title h3">{{ project.name }}</div>
 
-          <div class="card-work__description subtitle ellipsis-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donecdonec dui massa scelerisque felis
+          <div class="card-work__description w-[332px] h-[48px] ellipsis-3 subtitle">
+            {{ project.description }}
           </div>
 
           <div class="flex items-center gap-[93px]">
@@ -44,7 +96,7 @@
                 />
               </svg>
 
-              <div class="text subtitle">28,628 Views</div>
+              <div class="text subtitle">{{ project.views }} Views</div>
             </div>
           </div>
         </div>
