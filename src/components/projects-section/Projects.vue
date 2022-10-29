@@ -54,7 +54,7 @@ const projects = ref([
 
 <template>
   <div id="projects" class="grid gap-10 content-start">
-    <div class="grid content-center w-[400px]">
+    <div class="grid content-center">
       <div class="relative grid content-center items-center w-[100px]">
         <div class="absolute right-[-1rem] w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
         <div class="subtitle text-orange">My Projects</div>
@@ -62,9 +62,21 @@ const projects = ref([
 
       <div class="h1">Recent’s Works</div>
 
-      <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
-        Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
+      <div class="grid grid-flow-col items-center justify-between">
+        <div class="description text-[#80A4C2] w-[400px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
+          Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
+        </div>
+
+        <div class="grid grid-flow-col gap-6">
+          <button class="text-btn bg-glassmorphism rounded-10">
+            <a class="w-[159px] h-[60px] grid justify-center items-center">Previous</a>
+          </button>
+
+          <button class="text-btn bg-glassmorphism rounded-10">
+            <a class="w-[159px] h-[60px] grid justify-center items-center">Next</a>
+          </button>
+        </div>
       </div>
     </div>
 
