@@ -51,7 +51,7 @@ const readMoreBtn = () => {
         </div>
 
         <div class="about-self relative w-[626px] h-[186px] overflow-hidden">
-          <div class="grid gap-[10px]">
+          <div class="grid gap-[10px] text-[#80A4C2]">
             <p>
               Hi, my name is Roland Doda and I am from Albania. Even though my programming journey started in 2013 and I
               have experience with Java, PHP, and Laravel, since 2017 I have been focusing only on the Frontend and I
@@ -213,7 +213,7 @@ const readMoreBtn = () => {
               <div class="icon">
                 <img :src="interest.img" alt="" />
               </div>
-              <div class="description">{{ interest.text }}</div>
+              <div class="description capitalize">{{ interest.text }}</div>
             </div>
           </div>
         </div>

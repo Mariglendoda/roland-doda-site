@@ -46,6 +46,10 @@ module.exports = {
           background: "linear-gradient(269deg, #1099fd 0%, #0fcffe 30.32%, #0fffc5 100%)",
         },
 
+        ".bg-linear-card": {
+          background: "linear-gradient(269.91deg, #011627 0.08%, rgba(1, 22, 39, 0) 98.92%)",
+        },
+
         ".bg-glassmorphism": {
           background: "linear-gradient(168deg, #ffffff66 0%, #ffffff1a 100%)",
         },
