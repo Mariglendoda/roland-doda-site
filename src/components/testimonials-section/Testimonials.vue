@@ -156,7 +156,7 @@ const recommendations = ref([
 
         <div class="h1">What people say about me</div>
 
-        <div class="description">
+        <div class="description text-[#80A4C2]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
           Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
         </div>

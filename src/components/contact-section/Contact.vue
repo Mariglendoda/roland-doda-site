@@ -11,7 +11,7 @@
 
         <div class="h1">Contact Me</div>
 
-        <div class="description w-[400px]">
+        <div class="description w-[400px] text-[#80A4C2]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
           Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
         </div>

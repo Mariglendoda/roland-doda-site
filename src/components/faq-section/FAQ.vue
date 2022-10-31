@@ -71,7 +71,7 @@ const toggle = (index: number) => {
             </div>
           </div>
 
-          <div class="subtitle text-start" :style="{ display: `${question.toggle ? 'block' : 'none'}` }">
+          <div class="subtitle text-start text-[#80A4C2]" :style="{ display: `${question.toggle ? 'block' : 'none'}` }">
             {{ question.answer }}
           </div>
         </div>

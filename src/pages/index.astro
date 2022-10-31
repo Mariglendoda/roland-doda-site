@@ -13,20 +13,20 @@ import Footer from "../components/Footer.astro"
 ---
 
 <MainLayout>
-  <div class="relative grid gap-[100px]">
+  <div class="relative grid">
     <HomeSection class="h-screen" />
 
-    <About client:load />
+    <About class="h-screen" client:load />
 
     <Projects class="h-screen" client:load />
 
-    <Services />
+    <Services class="h-screen" />
 
-    <Articles />
+    <Articles class="h-screen" />
 
-    <Testimonials />
+    <Testimonials class="h-screen" />
 
-    <FAQ client:load />
+    <!-- <FAQ client:load /> -->
 
     <Contact class="h-screen" />
 

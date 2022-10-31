@@ -1,54 +1,56 @@
-<script setup lang="ts">
-import VueIcon from "@icons/Vue.vue"
-import ViteIcon from "@icons/Vite.vue"
-import NuxtIcon from "@icons/Nuxt.vue"
-import SvelteIcon from "@icons/Svelte.vue"
-import TailwindIcon from "@icons/Tailwind.vue"
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="relative">
-    <div class="absolute w-[566px] h-[150px] top-[80px] bg-green rounded-[200px] -z-10 blur-[160px]"></div>
-
-    <img src="/assets/svg/img.png" alt="Code snippet" />
-
-    <VueIcon class="top-[142px] left-[-26px] z-10" />
-
-    <ViteIcon class="top-[222px] left-[15px] z-10" />
-
-    <NuxtIcon class="top-[230px] left-[260px] z-10" />
-
-    <SvelteIcon class="top-[195px] left-[469px] z-10" />
-
-    <TailwindIcon class="top-[102px] left-[506px] z-10" />
-
-    <svg
-      class="absolute top-[123px] left-[-37px]"
-      width="625"
-      height="145"
-      viewBox="0 0 625 145"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="782" height="679" viewBox="0 0 782 679" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M95 29C28.3567 47.9113 -74.3572 101.499 87.6026 134.127C155.352 146.123 338.867 157.311 530.929 106.095C692.471 55.3502 610.048 11.4098 537.046 1.4647"
-        stroke="url(#paint0_linear_1544_1145)"
-        stroke-width="1.10545"
-      ></path>
-      <defs>
-        <linearGradient
-          id="paint0_linear_1544_1145"
-          x1="516.292"
-          y1="26.1523"
-          x2="204.524"
-          y2="12.8164"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#1099FD"></stop>
-          <stop offset="0.303206" stop-color="#0FCFFE"></stop>
-          <stop offset="1" stop-color="#0FFFC5"></stop>
-        </linearGradient>
-      </defs>
+        d="M559.655 623.424L560.469 650.092L583.161 651.049L560.469 652.006L559.655 678.673L558.84 652.006L536.148 651.049L558.84 650.092L559.655 623.424Z"
+        fill="white"
+      />
+      <path
+        d="M112.336 222.403L113.027 241.779L132.296 242.475L113.027 243.17L112.336 262.546L111.644 243.17L92.375 242.475L111.644 241.779L112.336 222.403Z"
+        fill="white"
+      />
+      <path
+        d="M19.9605 384.781L20.6521 404.157L39.9211 404.852L20.6521 405.548L19.9605 424.924L19.2689 405.548L0 404.852L19.2689 404.157L19.9605 384.781Z"
+        fill="white"
+      />
+      <path
+        d="M316.726 182.26L317.418 201.636L336.687 202.332L317.418 203.027L316.726 222.403L316.035 203.027L296.766 202.332L316.035 201.636L316.726 182.26Z"
+        fill="white"
+      />
+      <path
+        d="M263.023 336.667L263.715 356.043L282.984 356.739L263.715 357.434L263.023 376.81L262.331 357.434L243.062 356.739L262.331 356.043L263.023 336.667Z"
+        fill="white"
+      />
+      <path
+        d="M357.054 25.8536L357.746 45.2296L377.015 45.925L357.746 46.6205L357.054 65.9965L356.363 46.6205L337.094 45.925L356.363 45.2296L357.054 25.8536Z"
+        fill="white"
+      />
+      <path
+        d="M200.007 513.725L200.699 533.101L219.968 533.797L200.699 534.492L200.007 553.868L199.316 534.492L180.047 533.797L199.316 533.101L200.007 513.725Z"
+        fill="white"
+      />
+      <path
+        d="M580.211 78.4947L580.902 97.8707L600.171 98.5661L580.902 99.2616L580.211 118.638L579.519 99.2616L560.25 98.5661L579.519 97.8707L580.211 78.4947Z"
+        fill="white"
+      />
+      <path
+        d="M404.07 573.386L404.761 592.762L424.03 593.458L404.761 594.153L404.07 613.529L403.378 594.153L384.109 593.458L403.378 592.762L404.07 573.386Z"
+        fill="white"
+      />
+      <path
+        d="M107.454 1.31793L109.025 28.2688L140.355 28.7701L109.057 30.2046L108.379 57.189L106.809 30.2381L75.4782 29.7369L106.777 28.3023L107.454 1.31793Z"
+        fill="white"
+      />
+      <path
+        d="M748.642 57.1297L750.212 84.0806L781.543 84.5819L750.244 86.0164L749.567 113.001L747.996 86.0499L716.666 85.5486L747.964 84.1141L748.642 57.1297Z"
+        fill="white"
+      />
+      <path
+        d="M687.618 517.095L689.189 544.046L720.519 544.548L689.221 545.982L688.543 572.967L686.973 546.016L655.642 545.514L686.941 544.08L687.618 517.095Z"
+        fill="white"
+      />
     </svg>
   </div>
 </template>

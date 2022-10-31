@@ -24,7 +24,7 @@ const readMoreBtn = () => {
 </script>
 
 <template>
-  <div id="about">
+  <div id="about" class="grid place-content-center">
     <div class="grid content-center w-[400px]">
       <div class="relative grid content-center items-center w-[100px]">
         <div class="absolute right-1 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
