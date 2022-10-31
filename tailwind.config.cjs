@@ -24,6 +24,7 @@ module.exports = {
 
       colors: {
         primary: "#011627",
+        secondary: "#03233D",
         gray: "#777b7d",
         orange: "#ee7a0f",
         green: "#0fffc5",
@@ -44,6 +45,10 @@ module.exports = {
       addComponents({
         ".bg-gradient": {
           background: "linear-gradient(269deg, #1099fd 0%, #0fcffe 30.32%, #0fffc5 100%)",
+        },
+
+        ".bg-linear-card": {
+          background: "linear-gradient(269.91deg, #011627 0.08%, rgba(1, 22, 39, 0) 98.92%)",
         },
 
         ".bg-glassmorphism": {
