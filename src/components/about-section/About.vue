@@ -217,7 +217,7 @@ const readMoreBtn = () => {
               <div class="icon">
                 <img :src="interest.img" alt="" />
               </div>
-              <div class="description capitalize">{{ interest.text }}</div>
+              <div class="description capitalize text-[#80A4C2]">{{ interest.text }}</div>
             </div>
           </div>
         </div>
