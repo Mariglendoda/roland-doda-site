@@ -45,7 +45,9 @@ const readMoreBtn = () => {
             <div class="box-icon">
               <img :src="box.img" alt="" />
             </div>
+
             <div class="h3">{{ box.title }}</div>
+
             <div class="subtitle">{{ box.text }}</div>
           </div>
         </div>
@@ -95,6 +97,8 @@ const readMoreBtn = () => {
 
       <div class="grid">
         <div class="relative">
+          <div class="absolute circle w-[100px] h-[100px] bg-yellow rounded-full right-[-35px] top-[-35px] -z-10"></div>
+
           <div class="absolute w-[358px] h-[358px] bg-box -z-10 right-0 top-0">
             <div class="grid grid-flow-col justify-center items-center gap-[30px] mt-6">
               <div>
