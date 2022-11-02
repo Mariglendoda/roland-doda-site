@@ -146,7 +146,7 @@ const recommendations = ref([
 </script>
 
 <template>
-  <div id="testimonials">
+  <section id="testimonials">
     <div class="relative grid gap-[30px] max-h-[1240px] overflow-hidden">
       <div class="grid content-center w-[400px]">
         <div class="relative grid content-center items-center w-[100px]">
@@ -175,5 +175,5 @@ const recommendations = ref([
         <button class="mb-16 bg-primary w-[159px] z-10 rounded-10 h-[60px]">Show more</button>
       </div>
     </div>
-  </div>
+  </section>
 </template>

@@ -3,7 +3,7 @@ import ServiceItem from "./ServiceItem.vue"
 </script>
 
 <template>
-  <div id="services" class="grid gap-6 place-content-center">
+  <section id="services" class="grid gap-6 place-content-center">
     <div class="grid gap-2 content-center">
       <div class="relative grid content-center items-center w-[100px]">
         <div class="absolute right-2 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
@@ -21,5 +21,5 @@ import ServiceItem from "./ServiceItem.vue"
     <div class="grid grid-cols-3 grid-rows-[1fr,1fr] gap-[60px]">
       <ServiceItem />
     </div>
-  </div>
+  </section>
 </template>

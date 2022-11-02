@@ -34,7 +34,7 @@ const articles = ref([
 </script>
 
 <template>
-  <div id="articles" class="grid gap-6 place-content-center">
+  <section id="articles" class="grid gap-6 place-content-center">
     <div class="grid grid-cols-[1fr,auto] items-center">
       <div class="grid content-center pt-[10px]">
         <div class="relative grid content-center items-center w-[100px]">
@@ -66,5 +66,5 @@ const articles = ref([
         <div class="ellipsis-3">{{ article.description }}</div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

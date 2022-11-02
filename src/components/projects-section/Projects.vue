@@ -68,7 +68,7 @@ const projects = ref([
 </script>
 
 <template>
-  <div id="projects" class="grid gap-10 place-content-center">
+  <section id="projects" class="grid gap-10 place-content-center">
     <div class="grid content-center">
       <div class="relative grid content-center items-center w-[100px]">
         <div class="absolute right-[-1rem] w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
@@ -138,7 +138,7 @@ const projects = ref([
 
       <div class="grid absolute right-0 w-[100px] h-[100%] bg-linear-card"></div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>

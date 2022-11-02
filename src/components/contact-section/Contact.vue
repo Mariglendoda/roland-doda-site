@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="contact" class="grid grid-cols-[auto_1fr] items-start content-center">
+  <section id="contact" class="grid grid-cols-[auto_1fr] items-start content-center">
     <div class="relative grid content-center gap-[20px]">
       <div>
         <div class="relative grid content-center items-center w-[100px]">
@@ -82,5 +82,5 @@
         <button class="bg-glassmorphism rounded-10 w-[159px] h-[60px]">Send Message</button>
       </form>
     </div>
-  </div>
+  </section>
 </template>
