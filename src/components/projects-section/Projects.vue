@@ -103,7 +103,7 @@ const projects = ref([
         >
           <div class="card-work" v-for="(project, index) of projects" :key="index">
             <div class="card-work__image w-[380px] h-[283px]">
-              <img :src="project.image" :alt="project.name" />
+              <img class="rounded-t-[12px]" :src="project.image" :alt="project.name" />
             </div>
 
             <div class="card">
