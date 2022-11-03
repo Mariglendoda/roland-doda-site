@@ -53,28 +53,30 @@ const articles = ref([
       </div>
     </div>
 
-    <div class="relative overflow-x-auto hide-scrollbar grid grid-flow-col justify-start gap-6 items-center">
-      <div class="grid grid-flow-col justify-start gap-6 items-center">
-        <div v-for="article of articles">
-          <div class="w-[380px] h-[283px] rounded-t-[12px]">
-            <img class="rounded-t-[12px]" :src="article.img" :alt="article.title" />
-          </div>
-
-          <div class="card">
-            <div class="h3">{{ article.title }}</div>
-
-            <div class="w-[332px] h-[48px] ellipsis-3 subtitle text-[#80A4C2]">
-              {{ article.description }}
+    <div class="grid relative">
+      <div class="cards overflow-x-auto hide-scrollbar">
+        <div class="slide grid grid-flow-col justify-start gap-6 items-center">
+          <div class="card-work" v-for="(article, index) of articles" :key="index">
+            <div class="card-work__image w-[380px] h-[283px]">
+              <img class="rounded-t-[12px]" :src="article.img" :alt="article.title" />
             </div>
 
-            <div class="footer-work__card grid grid-cols-[auto,1fr] items-center w-[100%] gap-1">
-              <button class="btn">
-                <p>Read Article</p>
+            <div class="card">
+              <div class="card-work__title h3">{{ article.title }}</div>
 
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
-                </svg>
-              </button>
+              <div class="card-work__description w-[332px] h-[48px] ellipsis-3 subtitle text-[#80A4C2]">
+                {{ article.description }}
+              </div>
+
+              <div class="footer-work__card grid grid-cols-[auto,1fr] items-center w-[100%] gap-1">
+                <button class="btn">
+                  <p>Read Article</p>
+
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
