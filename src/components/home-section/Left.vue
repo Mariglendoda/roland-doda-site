@@ -23,7 +23,7 @@ const stats = [
           <LineIcon class="absolute top-[62px] left-[140px]" />
         </div>
 
-        <p class="w-[486px] text-[#81919E]">
+        <p class="w-[486px] text-[#80A4C2]">
           Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you
           live.
         </p>
