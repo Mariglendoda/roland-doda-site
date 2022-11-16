@@ -104,7 +104,7 @@ const readMoreBtn = () => {
           </div>
         </div>
 
-        <div class="about-self relative w-[626px] h-[186px] overflow-hidden">
+        <div class="about-self relative w-[619px] h-[152px] overflow-hidden">
           <div class="grid gap-[10px] text-[#80A4C2]">
             <p>
               Hi, my name is Roland Doda and I am from Albania. Even though my programming journey started in 2013 and I
