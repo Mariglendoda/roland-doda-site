@@ -12,22 +12,41 @@ import StarIcon from "./svg/StarIcon.vue"
 </script>
 
 <template>
-  <div class="right-section grid justify-center items-center relative">
-    <div class="w-[406px] h-[406px] border border-white rounded-full absolute left-0 right-0 m-auto">
-      <VueIcon />
+  <div>
+    <div class="right-section grid justify-center items-center relative">
+      <div class="w-[406px] h-[406px] border border-white rounded-full absolute left-0 right-0 m-auto">
+        <VueIcon />
 
-      <FigmaIcon />
-      <GithubIcon />
-      <JavascriptIcon />
-      <AvatarIcon />
-      <StarIcon />
+        <FigmaIcon />
+        <GithubIcon />
+        <JavascriptIcon />
+        <AvatarIcon />
+        <StarIcon />
+      </div>
+
+      <div class="w-[314px] h-[314px] border border-white rounded-full absolute left-0 right-0 m-auto">
+        <TypescriptIcon />
+        <SvelteIcon />
+        <VisualStudioIcon />
+        <TailwindIcon />
+      </div>
     </div>
 
-    <div class="w-[314px] h-[314px] border border-white rounded-full absolute left-0 right-0 m-auto">
-      <TypescriptIcon />
-      <SvelteIcon />
-      <VisualStudioIcon />
-      <TailwindIcon />
+    <div class="about grid grid-flow-col gap-[40px] absolute bottom-[80px] right-[-15px]">
+      <div class="grid justify-items-center">
+        <h1 class="text-4xl font-bold text-white">6Y.</h1>
+        <p class="text-white mt-4">💻 Experience</p>
+      </div>
+
+      <div class="grid justify-items-center">
+        <h1 class="text-4xl font-bold text-white">250+</h1>
+        <p class="text-white mt-4">✅ Project Completed</p>
+      </div>
+
+      <div class="grid justify-items-center">
+        <h1 class="text-4xl font-bold text-white">10</h1>
+        <p class="text-white mt-4">🏆 Awards</p>
+      </div>
     </div>
   </div>
 </template>
