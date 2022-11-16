@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import VueIcon from "./svg/VueIcon.vue"
-import TypescriptIcon from "./svg/TypescriptIcon.vue"
 import FigmaIcon from "./svg/FigmaIcon.vue"
+import GithubIcon from "./svg/GithubIcon.vue"
+import JavascriptIcon from "./svg/JavascriptIcon.vue"
+import TypescriptIcon from "./svg/TypescriptIcon.vue"
+import SvelteIcon from "./svg/SvelteIcon.vue"
+import VisualStudioIcon from "./svg/VisualStudioIcon.vue"
+import TailwindIcon from "./svg/TailwindIcon.vue"
+import AvatarIcon from "./svg/AvatarIcon.vue"
 </script>
 
 <template>
@@ -10,10 +16,16 @@ import FigmaIcon from "./svg/FigmaIcon.vue"
       <VueIcon />
 
       <FigmaIcon />
+      <GithubIcon />
+      <JavascriptIcon />
+      <AvatarIcon />
     </div>
 
     <div class="w-[314px] h-[314px] border border-white rounded-full absolute left-0 right-0 m-auto">
       <TypescriptIcon />
+      <SvelteIcon />
+      <VisualStudioIcon />
+      <TailwindIcon />
     </div>
   </div>
 </template>
