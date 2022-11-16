@@ -8,6 +8,7 @@ import SvelteIcon from "./svg/SvelteIcon.vue"
 import VisualStudioIcon from "./svg/VisualStudioIcon.vue"
 import TailwindIcon from "./svg/TailwindIcon.vue"
 import AvatarIcon from "./svg/AvatarIcon.vue"
+import StarIcon from "./svg/StarIcon.vue"
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import AvatarIcon from "./svg/AvatarIcon.vue"
       <GithubIcon />
       <JavascriptIcon />
       <AvatarIcon />
+      <StarIcon />
     </div>
 
     <div class="w-[314px] h-[314px] border border-white rounded-full absolute left-0 right-0 m-auto">
