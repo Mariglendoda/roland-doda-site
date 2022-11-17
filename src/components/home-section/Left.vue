@@ -2,6 +2,7 @@
 import LineIcon from "./svg/Line.vue"
 import Download from "./svg/Download.vue"
 import GitHub from "./svg/GitHub.vue"
+import VueBigIcon from "./svg/VueBigSvg.vue"
 
 const stats = [
   { text: "💻 Experienced Javascript Developer." },
@@ -14,6 +15,12 @@ const stats = [
 
 <template>
   <div class="flex gap-4 relative">
+    <div class="animate-five">
+      <VueBigIcon class="big-vue-svg" />
+
+      <img class="absolute top-[-90px] left-[100px] opacity-25 -z-10" src="/assets/images/enthusiastic.png" alt="" />
+    </div>
+
     <div class="grid grid-rows-[auto,1fr,auto] gap-3">
       <div class="h2 w-[380px] animate-one">Hi 👋 my name is Roland Doda.</div>
 
@@ -42,7 +49,7 @@ const stats = [
           >
             <Download />
 
-            <button class="p text- capitalize">Download CV</button>
+            <button class="p capitalize">Download CV</button>
           </div>
         </div>
       </div>
@@ -53,6 +60,7 @@ const stats = [
 <style>
 .cta-btn {
   background: #ecf0f7;
+  /* background: linear-gradient(267.3deg, #0fffc5 -73.65%, #03233d 136.84%); */
 }
 
 .animate-one {
@@ -107,6 +115,12 @@ const stats = [
 @keyframes animateFive {
   to {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .big-vue-svg {
+    transform: scale(0.9);
   }
 }
 </style>

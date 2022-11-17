@@ -17,8 +17,8 @@ const links = [
       <img class="absolute top-[30px]" src="/assets/svg/logo.svg" alt="Roland's logo" />
     </div>
 
-    <nav class="description grid grid-flow-col justify-end gap-6">
-      <a v-for="link of links" :key="link.name" :href="link.href">{{ link.name }}</a>
+    <nav class="nav__links description grid grid-flow-col justify-end gap-6">
+      <a class="nav__link" v-for="link of links" :key="link.name" :href="link.href">{{ link.name }}</a>
     </nav>
 
     <button class="bg-white text-primary rounded-10">
