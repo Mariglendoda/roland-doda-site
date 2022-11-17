@@ -12,7 +12,7 @@ const links = [
 </script>
 
 <template>
-  <header class="grid grid-cols-[auto,1fr,auto] items-center gap-6">
+  <header class="grid grid-cols-[auto,1fr,auto] items-center gap-6 animate-header">
     <div class="relative w-[165px] h-[110px]">
       <img class="absolute top-[30px]" src="/assets/svg/logo.svg" alt="Roland's logo" />
     </div>
@@ -26,3 +26,16 @@ const links = [
     </button>
   </header>
 </template>
+
+<style>
+.animate-header {
+  opacity: 0;
+  animation: animateHeader 2s ease-in-out forwards 1s;
+}
+
+@keyframes animateHeader {
+  to {
+    opacity: 1;
+  }
+}
+</style>

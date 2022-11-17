@@ -11,7 +11,7 @@ import CardDevTo from "./svg/CardDevTo.vue"
 </script>
 
 <template>
-  <div class="mb-[30px] socials flex gap-6 items-center">
+  <div class="mb-[30px] socials flex gap-6 items-center animate-socials">
     <a href="https://github.com/Rolanddoda">
       <CardGithub />
     </a>
@@ -32,3 +32,16 @@ import CardDevTo from "./svg/CardDevTo.vue"
     </a>
   </div>
 </template>
+
+<style>
+.animate-socials {
+  opacity: 0;
+  animation: animateSocials 2s ease-in-out forwards 1s;
+}
+
+@keyframes animateSocials {
+  to {
+    opacity: 1;
+  }
+}
+</style>
