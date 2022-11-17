@@ -28,7 +28,7 @@ const stats = [
           live.
         </p>
 
-        <div class="flex gap-4 mt-4">
+        <div class="buttons flex gap-4 mt-4">
           <div
             class="grid grid-flow-col gap-4 justify-center items-center cta-btn w-[270px] h-[60px] rounded-[10px] animate-four"
           >

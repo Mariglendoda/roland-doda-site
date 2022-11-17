@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[60px] h-[60px] grid justify-center items-center bg-primary absolute top-[300px] left-[12px]">
+  <div class="w-[60px] h-[60px] grid justify-center items-center bg-secondary absolute top-[300px] left-[12px]">
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="16" cy="16.3795" rx="14" ry="13.3795" fill="white" />
       <path

@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute left-[45px] right-0 bottom-0 top-0 z-10">
+  <div class="absolute left-[50px] right-0 bottom-[-110px] z-10">
     <svg
       width="315"
       height="315"

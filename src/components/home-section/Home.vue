@@ -10,7 +10,9 @@ import SocialMedia from "./SocialMedia.vue"
 </script>
 
 <template>
-  <section :id="hrefs.home" class="grid grid-rows-[auto_1fr_auto] items-center">
+  <section :id="hrefs.home" class="grid grid-rows-[auto_1fr_auto] items-center relative bg-secondary">
+    <div class="absolute w-[500px] h-full asd -z-0"></div>
+
     <Header />
 
     <div class="grid grid-cols-[2fr,1fr] items-center">
@@ -22,3 +24,20 @@ import SocialMedia from "./SocialMedia.vue"
     <SocialMedia />
   </section>
 </template>
+
+<style>
+.asd {
+  opacity: 0;
+  transform: scale(0) rotateX(90deg);
+  background: linear-gradient(90deg, #0fffc5 0%, rgba(15, 255, 197, 0.283189) 43.23%, rgba(15, 255, 197, 0) 69.27%);
+  filter: blur(250px);
+  animation: animateBlur 1.5s ease-in-out forwards 0.5s;
+}
+
+@keyframes animateBlur {
+  to {
+    opacity: 1;
+    transform: scale(1) rotateX(0deg);
+  }
+}
+</style>

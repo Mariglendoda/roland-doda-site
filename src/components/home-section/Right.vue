@@ -14,12 +14,12 @@ import StarIcon from "./svg/StarIcon.vue"
 <template>
   <div class="relative">
     <div class="right-section grid justify-center items-center relative">
+      <AvatarIcon class="show-one-svg" />
       <div class="w-[406px] h-[406px] border border-white rounded-full absolute left-0 right-0 m-auto circle-one">
         <VueIcon class="show-one-svg" />
         <FigmaIcon class="show-one-svg" />
         <GithubIcon class="show-one-svg" />
         <JavascriptIcon class="show-one-svg" />
-        <AvatarIcon class="show-one-svg" />
         <StarIcon class="show-one-svg" />
       </div>
 
