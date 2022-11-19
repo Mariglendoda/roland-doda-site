@@ -9,6 +9,7 @@ import VisualStudioIcon from "./svg/VisualStudioIcon.vue"
 import TailwindIcon from "./svg/TailwindIcon.vue"
 import AvatarIcon from "./svg/AvatarIcon.vue"
 import StarIcon from "./svg/StarIcon.vue"
+import ViteIcon from "./svg/ViteIcon.vue"
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import StarIcon from "./svg/StarIcon.vue"
         <GithubIcon class="show-one-svg" />
         <JavascriptIcon class="show-one-svg" />
         <StarIcon class="show-one-svg" />
+        <ViteIcon class="show-one-svg" />
       </div>
 
       <div class="w-[314px] h-[314px] border border-white rounded-full absolute left-0 right-0 m-auto circle-two">

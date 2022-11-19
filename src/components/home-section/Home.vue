@@ -10,9 +10,7 @@ import SocialMedia from "./SocialMedia.vue"
 </script>
 
 <template>
-  <section :id="hrefs.home" class="grid grid-rows-[auto_1fr_auto] items-center relative bg-secondary">
-    <div class="absolute w-[500px] h-full asd -z-0"></div>
-
+  <section :id="hrefs.home" class="grid grid-rows-[auto_1fr_auto] items-center relative">
     <Header />
 
     <div class="grid grid-cols-[2fr,1fr] items-center">
