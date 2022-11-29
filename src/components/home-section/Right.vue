@@ -33,7 +33,7 @@ import ViteIcon from "./svg/ViteIcon.vue"
       </div>
     </div>
 
-    <div class="about grid grid-flow-col gap-[25px] absolute top-[250px] right-[-15px] animate-about">
+    <div class="about grid grid-flow-col gap-[25px] absolute top-[220px] right-[-15px] animate-about">
       <div class="grid text-center justify-items-center">
         <h1 class="text-4xl font-bold text-white">6Y.</h1>
         <p class="text-[#80A4C2] mt-4">💻 Experience</p>

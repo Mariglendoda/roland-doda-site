@@ -16,7 +16,7 @@ import SocialMedia from "./SocialMedia.vue"
     <div class="grid grid-cols-[2fr,1fr] items-center">
       <LeftSection />
 
-      <RightSection />
+      <!-- <RightSection /> -->
     </div>
 
     <SocialMedia />
@@ -24,7 +24,21 @@ import SocialMedia from "./SocialMedia.vue"
 </template>
 
 <style>
-.asd {
+section {
+  padding: 0 100px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(0deg, rgba(9, 20, 39, 0.8), rgba(9, 20, 39, 0.8)),
+    url("/assets/images/office-bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* .asd {
   opacity: 0;
   transform: scale(0) rotateX(90deg);
 
@@ -44,5 +58,5 @@ import SocialMedia from "./SocialMedia.vue"
     opacity: 1;
     transform: scale(1) rotateX(0deg);
   }
-}
+} */
 </style>

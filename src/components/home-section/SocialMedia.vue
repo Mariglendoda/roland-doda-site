@@ -8,6 +8,7 @@ import CardTwitter from "./svg/CardTwitter.vue"
 import CardLinkedin from "./svg/CardLinkedin.vue"
 import CardStackoverflow from "./svg/CardStackoverflow.vue"
 import CardDevTo from "./svg/CardDevTo.vue"
+import CardYoutube from "./svg/CardYoutube.vue"
 </script>
 
 <template>
@@ -29,6 +30,10 @@ import CardDevTo from "./svg/CardDevTo.vue"
 
     <a href="https://dev.to/the_one">
       <CardDevTo />
+    </a>
+
+    <a href="#">
+      <CardYoutube />
     </a>
   </div>
 </template>
