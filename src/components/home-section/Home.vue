@@ -19,12 +19,12 @@ import SocialMedia from "./SocialMedia.vue"
       <RightSection />
     </div>
 
-    <SocialMedia />
+    <SocialMedia class="social-media" />
   </section>
 </template>
 
 <style>
-section {
+.home {
   padding: 0 100px;
   overflow: hidden;
   position: absolute;
@@ -42,7 +42,12 @@ section {
   .home > div {
     max-width: 1440px;
     width: 1440px;
-    margin: auto;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home > .social-media {
+    margin-bottom: 30px;
   }
 }
 </style>

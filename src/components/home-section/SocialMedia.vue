@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { hrefs } from "../../constants"
-// Components
-
 // social media links
 import CardGithub from "./svg/CardGithub.vue"
 import CardTwitter from "./svg/CardTwitter.vue"
