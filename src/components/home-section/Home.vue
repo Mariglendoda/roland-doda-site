@@ -24,25 +24,17 @@ import SocialMedia from "./SocialMedia.vue"
 </template>
 
 <style>
-.asd {
-  opacity: 0;
-  transform: scale(0) rotateX(90deg);
+section {
+  padding: 0 100px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
 
-  background: linear-gradient(
-    90deg,
-    #0fffc5 0%,
-    rgba(15, 255, 197, 0.710376) 10.47%,
-    rgba(15, 255, 197, 0.283189) 46.48%,
-    rgba(15, 255, 197, 0) 98.84%
-  );
-  filter: blur(225px);
-  animation: animateBlur 1.5s ease-in-out forwards 0.5s;
-}
-
-@keyframes animateBlur {
-  to {
-    opacity: 1;
-    transform: scale(1) rotateX(0deg);
-  }
+  background: linear-gradient(0deg, rgba(9, 20, 39, 0.8), rgba(9, 20, 39, 0.8)),
+    url("/assets/images/office-bg.png") no-repeat center center;
+  background-size: cover;
 }
 </style>

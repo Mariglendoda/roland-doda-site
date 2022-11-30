@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import LineIcon from "./svg/Line.vue"
-import Download from "./svg/Download.vue"
-import GitHub from "./svg/GitHub.vue"
-import VueBigIcon from "./svg/VueBigSvg.vue"
 
 const stats = [
   { text: "💻 Experienced Javascript Developer." },
@@ -15,36 +12,36 @@ const stats = [
 
 <template>
   <div class="flex gap-4 relative">
-    <div class="grid grid-rows-[auto,1fr,auto] gap-3">
-      <div class="h2 w-[380px] animate-one">Hi 👋 my name is Roland Doda.</div>
+    <div class="grid grid-rows-[auto,1fr,auto] gap-2">
+      <div class="h2 animate-one bg-white w-[237px] text-[#D35A5E] px-[10px] py-[5px] rounded-[3px]">
+        Personal Portfolio
+      </div>
 
       <div class="relative grid gap-1">
         <div class="animate-two">
-          <div class="h1 w-[510px]">I'm a Professional Frontend Developer</div>
+          <div class="h1 w-[540px]">I'm a Professional Frontend Developer</div>
           <LineIcon class="absolute top-[62px] left-[140px]" />
         </div>
 
-        <p class="w-[486px] text-[#80A4C2] animate-three">
+        <p class="w-[540px] text-[#96999F] animate-three">
           Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you
           live.
         </p>
 
-        <div class="buttons flex gap-4 mt-4">
-          <div
-            class="grid grid-flow-col gap-4 justify-center items-center cta-btn w-[270px] h-[60px] rounded-[10px] animate-four"
+        <div
+          class="flex items-center w-[540px] h-[64px] bg-glassmorphism rounded-[30px] p-[5px] backdrop-blur-[20px] mt-3 animate-three"
+        >
+          <input
+            class="w-[290px] ml-[25px] bg-transparent subtitle outline-none text-align-start placeholder:text-[white]"
+            type="text"
+            placeholder="Your Email Address"
+          />
+
+          <button
+            class="bg-white text-[#D35A5E] description outline-none rounded-[30px] grid justify-center items-center capitalize w-[270px] h-[54px] px-[30px]"
           >
-            <GitHub />
-
-            <button class="p text-primary capitalize">check out my gitHub</button>
-          </div>
-
-          <div
-            class="border-white border-2 grid grid-flow-col gap-4 justify-center items-center w-[209px] h-[60px] rounded-[10px] animate-five"
-          >
-            <Download />
-
-            <button class="p capitalize">Download CV</button>
-          </div>
+            send me a message
+          </button>
         </div>
       </div>
     </div>
