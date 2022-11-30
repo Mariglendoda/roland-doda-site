@@ -49,11 +49,6 @@ const stats = [
 </template>
 
 <style>
-.cta-btn {
-  background: #ecf0f7;
-  /* background: linear-gradient(267.3deg, #0fffc5 -73.65%, #03233d 136.84%); */
-}
-
 .animate-one {
   opacity: 0;
   animation: animateOne 2s ease-in-out forwards 0.5s;
