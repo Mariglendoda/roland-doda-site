@@ -17,13 +17,14 @@ import CardYoutube from "./svg/CardYoutube.vue"
       <CardGithub />
     </a>
 
+    <a href="https://www.linkedin.com/in/roland-doda/">
+      <CardLinkedin />
+    </a>
+
     <a href="https://twitter.com/dev_rolandi">
       <CardTwitter />
     </a>
 
-    <a href="https://www.linkedin.com/in/roland-doda/">
-      <CardLinkedin />
-    </a>
     <a href="https://stackoverflow.com/users/6385184/roland">
       <CardStackoverflow />
     </a>

@@ -23,13 +23,13 @@ const stats = [
           <LineIcon class="absolute top-[62px] left-[140px]" />
         </div>
 
-        <p class="w-[540px] text-[#80A4C2] animate-three">
+        <p class="w-[540px] text-[#96999F] animate-three">
           Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you
           live.
         </p>
 
         <div
-          class="flex items-center w-[540px] h-[64px] bg-glassmorphism rounded-[30px] p-[5px] backdrop-blur-[20px] mt-3"
+          class="flex items-center w-[540px] h-[64px] bg-glassmorphism rounded-[30px] p-[5px] backdrop-blur-[20px] mt-3 animate-three"
         >
           <input
             class="w-[290px] ml-[25px] bg-transparent subtitle outline-none text-align-start placeholder:text-[white]"

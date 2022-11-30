@@ -16,7 +16,7 @@ import SocialMedia from "./SocialMedia.vue"
     <div class="grid grid-cols-[2fr,1fr] items-center">
       <LeftSection />
 
-      <!-- <RightSection /> -->
+      <RightSection />
     </div>
 
     <SocialMedia />
@@ -37,26 +37,4 @@ section {
     url("/assets/images/office-bg.png") no-repeat center center;
   background-size: cover;
 }
-
-/* .asd {
-  opacity: 0;
-  transform: scale(0) rotateX(90deg);
-
-  background: linear-gradient(
-    90deg,
-    #0fffc5 0%,
-    rgba(15, 255, 197, 0.710376) 10.47%,
-    rgba(15, 255, 197, 0.283189) 46.48%,
-    rgba(15, 255, 197, 0) 98.84%
-  );
-  filter: blur(225px);
-  animation: animateBlur 1.5s ease-in-out forwards 0.5s;
-}
-
-@keyframes animateBlur {
-  to {
-    opacity: 1;
-    transform: scale(1) rotateX(0deg);
-  }
-} */
 </style>
