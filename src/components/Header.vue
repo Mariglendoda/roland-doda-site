@@ -12,7 +12,7 @@ const links = [
 </script>
 
 <template>
-  <header class="grid grid-cols-[auto,1fr,auto] items-center gap-6 animate-header">
+  <div class="grid grid-cols-[auto,1fr,auto] items-center gap-6 animate-header">
     <div class="relative w-[165px] h-[110px]">
       <img class="absolute top-[30px]" src="/assets/svg/logo.svg" alt="Roland's logo" />
     </div>
@@ -24,7 +24,7 @@ const links = [
     <button class="bg-white text-[#D35A5E] rounded-10">
       <a :href="hrefs.contact" class="w-[159px] h-[60px] grid justify-center items-center">Contact Me</a>
     </button>
-  </header>
+  </div>
 </template>
 
 <style>

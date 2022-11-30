@@ -10,7 +10,7 @@ import SocialMedia from "./SocialMedia.vue"
 </script>
 
 <template>
-  <section :id="hrefs.home" class="grid grid-rows-[auto_1fr_auto] items-center relative">
+  <section :id="hrefs.home" class="home grid grid-rows-[auto_1fr_auto] items-center relative">
     <Header />
 
     <div class="grid grid-cols-[2fr,1fr] items-center">
@@ -36,5 +36,13 @@ section {
   background: linear-gradient(0deg, rgba(9, 20, 39, 0.8), rgba(9, 20, 39, 0.8)),
     url("/assets/images/office-bg.png") no-repeat center center;
   background-size: cover;
+}
+
+@media only screen and (min-width: 2000px) {
+  .home > div {
+    max-width: 1440px;
+    width: 1440px;
+    margin: auto;
+  }
 }
 </style>
