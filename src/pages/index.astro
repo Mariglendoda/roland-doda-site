@@ -2,6 +2,8 @@
 // Component Imports
 import MainLayout from "../layouts/main-layout.astro"
 import HomeSection from "@components/home-section/Home.vue"
+import BestCompanies from "@components/best-companies-section/BestCompanies.vue"
+
 import About from "@components/about-section/About.vue"
 import Projects from "@components/projects-section/Projects.vue"
 import Services from "@components/services-section/Services.vue"
@@ -15,13 +17,15 @@ import Footer from "../components/Footer.astro"
 <MainLayout>
   <HomeSection class="h-screen" />
 
+  <BestCompanies />
+
   <!-- <About class="h-screen" client:load /> -->
 
   <!-- <Projects class="h-screen" client:load /> -->
 
   <!-- <Services class="h-screen" /> -->
 
-  <!-- <Articles class="h-screen" /> -->
+  <!-- <Articles class="h-screen" />  -->
 
   <!-- <Testimonials class="h-screen" /> -->
 

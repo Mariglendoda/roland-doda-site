@@ -31,7 +31,7 @@ const articles = ref([
 
 <template>
   <section id="articles" class="grid gap-6 place-content-center">
-    <div class="grid grid-cols-[1fr,auto] items-center">
+    <!-- <div class="grid grid-cols-[1fr,auto] items-center">
       <div class="grid content-center pt-[10px]">
         <div class="relative grid content-center items-center w-[100px]">
           <div class="absolute right-2 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
@@ -51,7 +51,7 @@ const articles = ref([
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="grid relative">
       <div class="cards overflow-x-auto hide-scrollbar">
