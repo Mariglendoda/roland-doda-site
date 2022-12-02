@@ -9,7 +9,7 @@ import LogoWithoutUnderline from "./svg/LogoWithoutUnderline.vue"
 
     <LogoWithoutUnderline class="circle-two" />
 
-    <p class="w-[174px] text-center m-auto text-gray animate-about">💻 Master for VueJs & Svelte 💖</p>
+    <p class="w-[174px] text-center m-auto text-lightBlue animate-about">💻 Master for VueJs & Svelte 💖</p>
   </div>
 </template>
 

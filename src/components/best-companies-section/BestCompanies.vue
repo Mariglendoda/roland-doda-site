@@ -13,9 +13,9 @@ import Amazon from "./svg/Amazon.vue"
 </script>
 
 <template>
-  <div class="bg-secondary px-[100px] h-[178px] grid grid-flow-col content-center">
+  <div class="w-full bg-secondary px-[100px] h-[178px] grid grid-flow-col content-center">
     <div class="cards overflow-x-auto hide-scrollbar">
-      <div class="slide grid grid-flow-col gap-24 items-center">
+      <div class="best-companies slide grid grid-flow-col gap-24 items-center">
         <Slack />
 
         <Google />

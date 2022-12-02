@@ -53,27 +53,10 @@ const projects = ref([
 </script>
 
 <template>
-  <section id="works" class="grid gap-10">
-    <div class="grid content-center">
-      <div class="relative grid content-center items-center w-[100px]">
-        <div class="absolute right-[-1rem] w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
-        <div class="subtitle text-orange">My Projects</div>
-      </div>
-
+  <section id="projects" class="px-[100px] grid gap-7 mt-[100px]">
+    <div>
+      <p class="text-24 font-bold text-yellow">My projects</p>
       <div class="h1">Recent’s Works</div>
-
-      <div class="grid grid-flow-col items-center justify-between">
-        <div class="description text-[#80A4C2] w-[400px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
-          Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
-        </div>
-
-        <div class="grid">
-          <button class="text-btn bg-white text-primary rounded-10">
-            <a class="w-[230px] h-[60px] grid justify-center items-center">Show More Projects</a>
-          </button>
-        </div>
-      </div>
     </div>
 
     <div class="w-full grid grid-cols-[auto,auto,auto] justify-between grid-rows-[459px] gap-x-12 gap-y-10">
@@ -85,7 +68,7 @@ const projects = ref([
         <div class="card">
           <div class="card-work__title h3">{{ project.name }}</div>
 
-          <div class="card-work__description w-[332px] h-[48px] subtitle text-[#80A4C2]">
+          <div class="card-work__description w-[332px] h-[48px] subtitle text-lightBlue">
             {{ project.description }}
           </div>
 
@@ -112,19 +95,3 @@ const projects = ref([
     </div>
   </section>
 </template>
-
-<style>
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px 24px;
-  gap: 10px;
-  width: 380px;
-  /* height: 166px; */
-  background: white;
-  backdrop-filter: blur(45px);
-  border-radius: 0px 0px 12px 12px;
-}
-</style>

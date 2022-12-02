@@ -21,8 +21,8 @@ const links = [
       <a class="nav__link" v-for="link of links" :key="link.name" :href="link.href">{{ link.name }}</a>
     </nav>
 
-    <button class="bg-white text-red rounded-10">
-      <a :href="hrefs.contact" class="w-[159px] h-[60px] grid justify-center items-center">Contact Me</a>
+    <button class="bg-white text-primary rounded-10">
+      <a :href="hrefs.contact" class="w-[159px] h-[60px] grid justify-center items-center font-medium">Contact Me</a>
     </button>
   </div>
 </template>

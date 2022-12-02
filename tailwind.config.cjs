@@ -25,13 +25,13 @@ module.exports = {
       colors: {
         primary: "#030E21",
         secondary: "#091427",
+        lightBlue: "#80A4C2",
         gray: "#96999F",
         orange: "#ee7a0f",
-        red: "#D35A5E",
         green: "#0fffc5",
         blue: "#18B9FF",
         graystarry: "#2E4455",
-        yellow: "#FAF2C1",
+        yellow: "#F8E7A1",
       },
 
       borderRadius: {

@@ -13,7 +13,9 @@ const stats = [
 <template>
   <div class="flex gap-4 relative">
     <div class="grid grid-rows-[auto,1fr,auto] gap-2">
-      <div class="h2 animate-one bg-white w-[237px] text-red px-[10px] py-[5px] rounded-[3px]">Personal Portfolio</div>
+      <div class="h2 animate-one bg-white w-[237px] text-primary px-[10px] py-[5px] rounded-[3px]">
+        Personal Portfolio
+      </div>
 
       <div class="relative grid gap-1">
         <div class="animate-two">
@@ -21,7 +23,7 @@ const stats = [
           <LineIcon class="absolute top-[62px] left-[140px]" />
         </div>
 
-        <p class="w-[540px] text-gray animate-three">
+        <p class="w-[540px] text-[#80A4C2] animate-three">
           Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you
           live. I ❤ Js & Vue.
         </p>
@@ -36,7 +38,7 @@ const stats = [
           />
 
           <button
-            class="bg-white text-red description outline-none rounded-[30px] grid justify-center items-center capitalize w-[270px] h-[54px] px-[30px]"
+            class="bg-white text-primary description outline-none rounded-[30px] grid justify-center items-center capitalize w-[270px] h-[54px] px-[30px]"
           >
             send me a message
           </button>
