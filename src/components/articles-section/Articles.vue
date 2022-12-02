@@ -30,59 +30,40 @@ const articles = ref([
 </script>
 
 <template>
-  <section id="articles" class="grid gap-6 place-content-center">
-    <!-- <div class="grid grid-cols-[1fr,auto] items-center">
-      <div class="grid content-center pt-[10px]">
-        <div class="relative grid content-center items-center w-[100px]">
-          <div class="absolute right-2 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
-          <div class="subtitle text-orange">My Articles</div>
-        </div>
+  <section id="articles" class="px-[100px] grid gap-7 mt-24 relative">
+    <div>
+      <p class="text-24 font-bold text-yellow">My projects</p>
+      <div class="h1">Recent’s Works</div>
+    </div>
 
-        <div class="h1">latest Post</div>
-
-        <div class="grid grid-flow-col items-center justify-between">
-          <div class="description text-[#80A4C2] w-[400px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
-            Duis vel urna ut ullamcorper velit non non. A purus faucibus velit ac natoque.
+    <div class="cards overflow-x-auto hide-scrollbar">
+      <div class="slide grid grid-flow-col justify-start gap-6 items-center">
+        <div class="card-work" v-for="(article, index) of articles" :key="index">
+          <div class="card-work__image w-[380px] h-[283px]">
+            <img class="rounded-t-[12px]" :src="article.img" :alt="article.title" />
           </div>
 
-          <button class="text-btn bg-glassmorphism rounded-10">
-            <a class="w-[230px] h-[60px] grid justify-center items-center">Explore More Articles</a>
-          </button>
-        </div>
-      </div>
-    </div> -->
+          <div class="card">
+            <div class="card-work__title h3">{{ article.title }}</div>
 
-    <div class="grid relative">
-      <div class="cards overflow-x-auto hide-scrollbar">
-        <div class="slide grid grid-flow-col justify-start gap-6 items-center">
-          <div class="card-work" v-for="(article, index) of articles" :key="index">
-            <div class="card-work__image w-[380px] h-[283px]">
-              <img class="rounded-t-[12px]" :src="article.img" :alt="article.title" />
+            <div class="card-work__description w-[332px] h-[48px] ellipsis-3 subtitle text-[#80A4C2]">
+              {{ article.description }}
             </div>
 
-            <div class="card">
-              <div class="card-work__title h3">{{ article.title }}</div>
+            <div class="footer-work__card grid grid-cols-[auto,1fr] items-center w-[100%] gap-1">
+              <button
+                class="grid grid-flow-col items-center content-center p-3 rounded-[6px] subtitle bg-white text-primary"
+              >
+                <p>Read Article</p>
 
-              <div class="card-work__description w-[332px] h-[48px] ellipsis-3 subtitle text-[#80A4C2]">
-                {{ article.description }}
-              </div>
-
-              <div class="footer-work__card grid grid-cols-[auto,1fr] items-center w-[100%] gap-1">
-                <button class="btn">
-                  <p>Read Article</p>
-
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
-                  </svg>
-                </button>
-              </div>
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="grid absolute right-0 w-[100px] h-[100%] bg-linear-card"></div>
     </div>
   </section>
 </template>
@@ -99,18 +80,5 @@ const articles = ref([
   background: linear-gradient(180.67deg, rgba(255, 255, 255, 0.4) -136.79%, rgba(255, 255, 255, 0.1) 49.83%);
   backdrop-filter: blur(45px);
   border-radius: 0px 0px 12px 12px;
-}
-
-.btn {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  align-content: center;
-  padding: 12px;
-  width: 100%;
-  height: 41px;
-  background: linear-gradient(168deg, rgba(255, 255, 255, 0.4) 7.84%, rgba(255, 255, 255, 0.1) 92.16%);
-  border-radius: 6px;
-  font-size: 14px;
 }
 </style>
