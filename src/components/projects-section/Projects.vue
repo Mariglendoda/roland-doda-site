@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue"
 
+import ArrowShowMoreSvg from "public/assets/svg/ArrowShowMoreSvg.vue";
+
 const projects = ref([
   {
     name: "☕ Coffee Street",
@@ -55,7 +57,16 @@ const projects = ref([
 <template>
   <section id="projects" class="px-[100px] grid gap-7 mt-[100px]">
     <div>
-      <p class="text-24 font-bold text-yellow">My projects</p>
+      <div class="grid grid-flow-col items-center justify-between">
+        <p class="text-24 font-bold text-yellow">My projects</p>
+
+        <div class="grid grid-flow-col justify-center gap-6">
+          <p class="text-yellow">See All</p>
+
+          <ArrowShowMoreSvg />
+        </div>
+      </div>
+
       <div class="h1">Recent’s Works</div>
     </div>
 
@@ -65,7 +76,7 @@ const projects = ref([
           <img class="rounded-t-[12px]" :src="project.image" :alt="project.name" />
         </div>
 
-        <div class="card">
+        <div class="card grid grid-flow-col justify-start items-start w-[380px] bg-glassmorphism">
           <div class="card-work__title h3">{{ project.name }}</div>
 
           <div class="card-work__description w-[332px] h-[48px] subtitle text-lightBlue">
