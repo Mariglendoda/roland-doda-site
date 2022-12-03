@@ -72,7 +72,7 @@ module.exports = {
         },
 
         ".bg-hide": {
-          background: "linear-gradient(177.46deg, rgba(1, 22, 39, 0) -364.45%, #011627 97.88%)",
+          background: "linear-gradient(0.04deg, #030E21 0.03%, rgba(3, 14, 33, 0) 233.84%)",
         },
 
         ".h1": {

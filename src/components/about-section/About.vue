@@ -1,14 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue"
 
-import SecuritySvg from "public/assets/svg/SecuritySvg.vue"
-import CodingSvg from "public/assets/svg/CodingSvg.vue"
-import BracketsSvg from "public/assets/svg/BracketsSvg.vue"
-import MenuSvg from "public/assets/svg/MenuSvg.vue"
-import CursorSvg from "public/assets/svg/CursorSvg.vue"
-import FrameSvg from "public/assets/svg/FrameSvg.vue"
-import PenSvg from "public/assets/svg/PenSvg.vue"
-import HeartSvg from "public/assets/svg/HeartSvg.vue"
+import DownloadSvg from "public/assets/svg/DownloadSvg.vue"
 
 const boxes = ref([
   { img: "assets/images/stackoverflow.png", title: "Answers", text: "240" },
@@ -33,47 +26,12 @@ const readMoreBtn = () => {
 </script>
 
 <template>
-  <section id="about" class="grid place-content-center">
-    <div class="grid content-center w-[400px]">
-      <div class="relative grid content-center items-center w-[100px]">
-        <div class="absolute right-1 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
-        <div class="subtitle text-orange">My Intro</div>
-      </div>
+  <section id="about" class="grid items-center px-[100px] mt-[100px]">
+    <div class="grid grid-flow-col gap-10">
+      <div class="grid items-start">
+        <img src="../../../public/assets/images/Hero Image.png" alt="" />
 
-      <div class="h1">About Me</div>
-    </div>
-
-    <div class="grid grid-cols-[1fr,1fr] gap-[100px] mt-[70px]">
-      <div class="grid">
-        <div class="relative">
-          <div class="absolute circle w-[100px] h-[100px] bg-white rounded-full left-[-35px] top-[-35px] -z-10"></div>
-
-          <div class="absolute w-[358px] h-[358px] bg-box -z-10 right-[160px] top-0">
-            <div class="grid grid-flow-col justify-center items-center gap-[30px] mt-6">
-              <SecuritySvg />
-
-              <CodingSvg />
-
-              <BracketsSvg />
-
-              <MenuSvg />
-            </div>
-
-            <div class="grid justify-center absolute mr-5 top-[80px] left-[20px] gap-[30px]">
-              <CursorSvg />
-
-              <FrameSvg />
-
-              <PenSvg />
-
-              <HeartSvg />
-            </div>
-          </div>
-
-          <img class="absolute left-[72px] top-[72px]" src="assets/images/rolanddoda.png" alt="" />
-        </div>
-
-        <div v-if="dispplayText" class="grid content-start gap-[20px] mt-[250px] ml-[50px]">
+        <div v-if="dispplayText" class="grid content-start gap-[20px]">
           <div class="h2">My interests</div>
 
           <div class="grid grid-flow-col justify-start gap-[24px]">
@@ -87,25 +45,14 @@ const readMoreBtn = () => {
         </div>
       </div>
 
-      <div class="grid gap-[24px] content-start">
-        <div class="grid grid-flow-col justify-start gap-[40px]">
-          <div
-            class="w-[182px] h-[167px] grid justify-items-center content-center gap-[5px] bg-box"
-            v-for="(box, index) of boxes"
-            :key="index"
-          >
-            <div class="box-icon">
-              <img :src="box.img" alt="" />
-            </div>
-
-            <div class="h3">{{ box.title }}</div>
-
-            <div class="subtitle">{{ box.text }}</div>
-          </div>
+      <div>
+        <div>
+          <p class="text-24 font-bold text-yellow">My Intro</p>
+          <div class="h1 leading-[72px]">About Me</div>
         </div>
 
-        <div class="about-self relative w-[619px] h-[152px] overflow-hidden">
-          <div class="grid gap-[10px] text-[#80A4C2]">
+        <div class="about-self relative h-[213px] overflow-hidden">
+          <div class="grid gap-[10px] text-lightBlue">
             <p>
               Hi, my name is Roland Doda and I am from Albania. Even though my programming journey started in 2013 and I
               have experience with Java, PHP, and Laravel, since 2017 I have been focusing only on the Frontend and I
@@ -135,13 +82,21 @@ const readMoreBtn = () => {
             </p>
           </div>
 
-          <div class="linear-text absolute w-full h-[104px] bottom-0 bg-hide"></div>
+          <div class="linear-text absolute w-full h-[131px] bottom-0 bg-hide"></div>
         </div>
 
-        <div>
+        <div class="grid grid-flow-col justify-start gap-5 mt-[35px]">
           <button class="text-btn bg-white text-primary rounded-10">
-            <a class="w-[159px] h-[60px] grid justify-center items-center" @click="readMoreBtn">
+            <a class="h-[60px] px-[33px] grid justify-center items-center" @click="readMoreBtn">
               {{ dispplayText ? "Show Less" : "Show More" }}
+            </a>
+          </button>
+
+          <button class="text-btn border-2 border-white text-white rounded-10">
+            <a class="h-[60px] grid grid-flow-col px-[33px] gap-2 justify-center items-center">
+              <DownloadSvg />
+
+              Download CV
             </a>
           </button>
         </div>
