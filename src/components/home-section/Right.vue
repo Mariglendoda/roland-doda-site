@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import QrCode from "./svg/QrCode.vue"
-import LogoWithoutUnderline from "./svg/LogoWithoutUnderline.vue"
+import Logo from "public/assets/svg/Logo.vue"
 </script>
 
 <template>
   <div class="grid justify-end">
     <QrCode class="animate-about" />
 
-    <LogoWithoutUnderline class="circle-two" />
+    <Logo class="circle-two" />
 
     <p class="w-[174px] text-center m-auto text-lightBlue animate-about">💻 Master for VueJs & Svelte 💖</p>
   </div>

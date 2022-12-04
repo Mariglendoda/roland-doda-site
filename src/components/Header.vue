@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { hrefs } from "../constants"
+import Logo from "public/assets/svg/Logo.vue"
 
 const links = [
   { name: "Home", href: hrefs.home },
@@ -14,7 +15,7 @@ const links = [
 <template>
   <div class="grid grid-cols-[auto,1fr,auto] items-center gap-6 animate-header">
     <div class="relative w-[165px] h-[110px]">
-      <img class="absolute top-[30px]" src="/assets/svg/logo.svg" alt="Roland's logo" />
+      <Logo class="absolute top-[30px]" />
     </div>
 
     <nav class="nav__links description grid grid-flow-col justify-end gap-6">

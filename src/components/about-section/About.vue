@@ -26,8 +26,8 @@ const readMoreBtn = () => {
 </script>
 
 <template>
-  <section id="about" class="grid items-center px-[100px] mt-[100px]">
-    <div class="grid grid-flow-col gap-10">
+  <section id="about" class="grid items-center px-[100px]">
+    <div class="grid grid-flow-col gap-10 mt-[100px]">
       <div class="grid items-start">
         <img src="../../../public/assets/images/Hero Image.png" alt="" />
 
