@@ -1,15 +1,15 @@
-<script setup lang="ts"></script>
+---
+import ContactForm from "./ContactForm.vue"
+---
 
-<template>
-  <section id="contact" class="grid grid-cols-[auto_1fr] items-start content-center">
+<section id="contact" class="py-[100px]">
+  <div class="grid grid-cols-[auto_1fr] items-start content-center px-[100px]">
     <div class="relative grid content-center gap-[20px]">
       <div>
-        <div class="relative grid content-center items-center w-[100px]">
-          <div class="absolute right-0 w-[63px] h-[42px] bg-graystarry -z-10 skew-x-[30deg]"></div>
-          <div class="subtitle text-orange">Contact Info</div>
+        <div>
+          <p class="text-24 font-bold text-yellow">My Intro</p>
+          <div class="h1 leading-[72px]">About Me</div>
         </div>
-
-        <div class="h1">Contact Me</div>
 
         <div class="description w-[400px] text-[#80A4C2]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu donec dui massa scelerisque felis consectetur.
@@ -54,33 +54,7 @@
         </div>
       </div>
 
-      <form class="grid content-center justify-center gap-[24px]">
-        <div class="flex gap-[14px]">
-          <input
-            class="rgba w-[350px] h-[60px] outline-none accent-[rgba(255, 255, 255, 0.1)] p-3 rounded-10 bg-[rgba(255, 255, 255, 0.1)]"
-            type="text"
-            placeholder="Your Name"
-          />
-          <input
-            class="rgba w-[350px] h-[60px] outline-none accent-[rgba(255, 255, 255, 0.1)] p-3 rounded-10"
-            type="text"
-            placeholder="Your Email Address"
-          />
-        </div>
-
-        <input
-          class="rgba w-[714px] h-[60px] outline-none accent-[rgba(255, 255, 255, 0.1)] p-3 rounded-10"
-          type="text"
-          placeholder="Your Subject"
-        />
-        <input
-          class="rgba w-[714px] pb-[173px] grid content-start outline-none accent-[rgba(255, 255, 255, 0.1)] p-3 rounded-10"
-          type="text"
-          placeholder="Your Message..."
-        />
-
-        <button class="bg-glassmorphism rounded-10 w-[159px] h-[60px]">Send Message</button>
-      </form>
+      <ContactForm />
     </div>
-  </section>
-</template>
+  </div>
+</section>

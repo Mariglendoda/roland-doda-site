@@ -3,12 +3,6 @@ import { ref, computed } from "vue"
 
 import DownloadSvg from "public/assets/svg/DownloadSvg.vue"
 
-const boxes = ref([
-  { img: "assets/images/stackoverflow.png", title: "Answers", text: "240" },
-  { img: "assets/images/dev.png", title: "Views", text: "50.000+" },
-  { img: "assets/images/articles.png", title: "Articles", text: "8+ Written" },
-])
-
 const interests = ref([
   { img: "assets/images/music.png", text: "music" },
   { img: "assets/images/travel.png", text: "travel" },
@@ -26,8 +20,8 @@ const readMoreBtn = () => {
 </script>
 
 <template>
-  <section id="about" class="grid items-center px-[100px]">
-    <div class="grid grid-flow-col gap-10 mt-[100px]">
+  <section id="about" class="grid items-center py-[100px]">
+    <div class="grid grid-flow-col gap-10 px-[100px]">
       <div class="grid items-start">
         <img src="../../../public/assets/images/Hero Image.png" alt="" />
 

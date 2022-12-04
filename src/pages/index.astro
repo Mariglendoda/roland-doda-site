@@ -10,8 +10,8 @@ import Services from "@components/services-section/Services.vue"
 import Articles from "@components/articles-section/Articles.vue"
 import Testimonials from "@components/testimonials-section/Testimonials.vue"
 import FAQ from "@components/faq-section/FAQ.vue"
-import Contact from "@components/contact-section/Contact.vue"
-import Footer from "@components/footer-section/Footer.vue"
+import Contact from "@components/contact-section/Contact.astro"
+import Footer from "@components/footer-section/Footer.astro"
 ---
 
 <MainLayout>
@@ -31,7 +31,7 @@ import Footer from "@components/footer-section/Footer.vue"
 
   <!-- <FAQ client:load /> -->
 
-  <!-- <Contact class="h-screen" /> -->
+  <Contact />
 
   <Footer />
 </MainLayout>

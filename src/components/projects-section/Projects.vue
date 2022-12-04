@@ -55,8 +55,8 @@ const projects = ref([
 </script>
 
 <template>
-  <section id="projects" class="bg-secondary grid gap-7 my-[100px]">
-    <div class="px-[100px] grid gap-7 mt-[100px] mb-[100px]">
+  <section id="projects" class="bg-secondary grid gap-7 py-[100px]">
+    <div class="px-[100px] grid gap-7">
       <div>
         <div class="grid grid-flow-col items-center justify-between">
           <p class="text-24 font-bold text-yellow">My projects</p>
