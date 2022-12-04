@@ -1,0 +1,23 @@
+<script setup lang="ts">
+import Logo from "public/assets/svg/Logo.vue"
+import NavLinks from "./NavLinks.vue"
+import SocialMedia from "./SocialMedia.vue";
+</script>
+
+<template>
+  <section class="py-[50px] text-center bg-secondary">
+    <div class="grid gap-[30px] px-[100px]">
+      <Logo class="m-auto" />
+
+      <p class="description text-lightBlue">Experienced and enthusiast Vue.js Frontend Developer</p>
+
+      <NavLinks/>
+
+      <SocialMedia />
+
+      <div class="bg-gray h-[1px] byline"></div>
+
+      <p class="copyright">© Copyright Roland Doda. All Right Reserved.</p>
+    </div>
+  </section>
+</template>
