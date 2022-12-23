@@ -2,36 +2,8 @@
 // Component Imports
 import MainLayout from "../layouts/main-layout.astro"
 import HomeSection from "@components/home-section/Home.vue"
-import BestCompanies from "@components/best-companies-section/BestCompanies.vue"
-
-import About from "@components/about-section/About.vue"
-import Projects from "@components/projects-section/Projects.vue"
-import Services from "@components/services-section/Services.vue"
-import Articles from "@components/articles-section/Articles.vue"
-import Testimonials from "@components/testimonials-section/Testimonials.vue"
-import FAQ from "@components/faq-section/FAQ.vue"
-import Contact from "@components/contact-section/Contact.astro"
-import Footer from "@components/footer-section/Footer.astro"
 ---
 
 <MainLayout>
   <HomeSection class="h-screen" />
-
-  <BestCompanies />
-
-  <About client:load />
-
-  <Projects />
-
-  <!-- <Services class="h-screen" /> -->
-
-  <!-- <Articles /> -->
-
-  <!-- <Testimonials class="h-screen" /> -->
-
-  <!-- <FAQ client:load /> -->
-
-  <Contact />
-
-  <Footer />
 </MainLayout>
