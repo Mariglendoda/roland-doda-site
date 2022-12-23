@@ -4,8 +4,8 @@ import LogoVector from "./svg/LogoVector.vue"
 </script>
 
 <template>
-  <div class="logo relative">
-    <LogoVector class="absolute top-0" />
-    <LogoText class="absolute top-4 left-7" />
+  <div class="logo">
+    <LogoVector class="absolute top-3" />
+    <LogoText class="relative left-6 top-[-5px]" />
   </div>
 </template>
