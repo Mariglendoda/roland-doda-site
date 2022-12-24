@@ -10,7 +10,7 @@ import GithubSvg from "./svg/GithubSvg.vue"
       <GithubSvg />
     </a>
 
-    <a href="https://twitter.com/DodaMariglen">
+    <a href="https://twitter.com/dev_rolandi">
       <TwitterSvg />
     </a>
 

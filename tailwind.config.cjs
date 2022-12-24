@@ -44,7 +44,7 @@ module.exports = {
     function ({ addComponents, theme }) {
       addComponents({
         ".bg-gradient": {
-          background: "linear-gradient(269deg, #1099fd 0%, #0fcffe 30.32%, #0fffc5 100%)",
+          background: "linear-gradient(269deg, #1099FD 0.85%, #0FCFFE 30.65%, #0FFFC5 99.15%)",
         },
 
         ".bg-linear-card": {
